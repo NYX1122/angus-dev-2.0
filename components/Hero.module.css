@@ -1,0 +1,32 @@
+.container {
+  height: 93.4859155vh;
+  padding-top: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 40px;
+
+  background-color: black;
+}
+
+.sloganContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.lineContainer {
+  padding: 6px;
+  border: 3px solid #1EFFBC;
+}
+
+.lineContainer h2 {
+  font-size: 32px;
+}
+
+.bottomInnerContainer {
+  background: #1EFFBC;
+}
