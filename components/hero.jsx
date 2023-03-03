@@ -8,7 +8,7 @@ import bottomLeftCornerHero from '../public/bottomLeftCornerHero.svg';
 import bottomRightCornerHero from '../public/bottomRightCornerHero.svg';
 import logo from '../public/logo.svg';
 
-export default function Header() {
+export default function Hero() {
   const graphicDataArray = [
     { id: 'topLeftCorner', image: topLeftCornerHero },
     { id: 'topRightCorner', image: topRightCornerHero },
