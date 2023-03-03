@@ -1,21 +1,46 @@
 .container {
-  height: 93.4859155vh;
-  padding-top: 70px;
+  padding-bottom: 5vh;
+  position: relative;
+  height: calc(100vh - 37px);
 
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 7vh;
 
   background-color: black;
+}
+
+.topLeftCornerHero {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topRightCornerHero {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bottomLeftCornerHero {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bottomRightCornerHero {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .sloganContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 3vh;
 }
 
 .lineContainer {
@@ -24,9 +49,13 @@
 }
 
 .lineContainer h2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .bottomInnerContainer {
   background: #1EFFBC;
+}
+
+.bottomText {
+  color: black;
 }
