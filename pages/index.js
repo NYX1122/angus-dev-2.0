@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import Hero from '../components/hero';
+import About from '../components/About';
+
 import styles from '@/styles/Home.module.css';
 
 export default function Home() {
@@ -15,6 +17,7 @@ export default function Home() {
       <main className={styles.mainContainer}>
         <Header></Header>
         <Hero></Hero>
+        <About></About>
       </main>
     </>
   );
