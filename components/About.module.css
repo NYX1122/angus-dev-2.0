@@ -1,4 +1,4 @@
-.container {
+.prefaceContainer {
   background-color: black;
 
   padding: 5vh 20px;
@@ -28,4 +28,14 @@
   font-weight: 400;
   
   text-align: center;
+}
+
+.doContainer {
+  padding: 5vh 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-Content: center;
+  align-items: center;
+  gap: 7vh;
 }

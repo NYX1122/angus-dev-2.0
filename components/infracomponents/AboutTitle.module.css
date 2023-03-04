@@ -1,0 +1,13 @@
+.container {
+  background-color: black;
+  border: 2.5px solid #1EFFBC;
+  outline: 3px solid black;
+
+  padding: 0px 3px;
+}
+
+.container h1 {
+  color: #1EFFBC;
+  font-weight: 400;
+  font-size: 20px;
+}

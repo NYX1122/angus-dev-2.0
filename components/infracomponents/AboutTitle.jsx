@@ -1,6 +1,6 @@
-import styles from './SectionTitle.module.css';
+import styles from './AboutTitle.module.css';
 
-export default function SectionTitle({ content }) {
+export default function AboutTitle({ content }) {
   return (
     <>
       <div className={styles.container}>

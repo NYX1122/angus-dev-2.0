@@ -1,4 +1,5 @@
 import SectionTitle from './infracomponents/SectionTitle';
+import AboutTitle from './infracomponents/aboutTitle';
 
 import Image from 'next/image';
 
@@ -9,7 +10,7 @@ import developerGraphic from '../public/developerGraphic.svg';
 export default function About() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.prefaceContainer}>
         <SectionTitle content='About Us'></SectionTitle>
         <Image
           src={developerGraphic}
@@ -26,6 +27,9 @@ export default function About() {
             needs to succeed.
           </p>
         </div>
+      </div>
+      <div className={styles.doContainer}>
+        <AboutTitle content='What We Do'></AboutTitle>
       </div>
     </>
   );
