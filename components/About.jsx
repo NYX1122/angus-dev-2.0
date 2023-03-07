@@ -1,5 +1,5 @@
 import SectionTitle from './infracomponents/SectionTitle';
-import AboutTitle from './infracomponents/aboutTitle';
+import AboutTitle from './infracomponents/AboutTitle';
 import AboutItem from './infracomponents/AboutItem';
 
 import Image from 'next/image';
