@@ -30,6 +30,7 @@
   font-size: 13px;
   color: black;
   text-align: center;
+  font-weight: 600;
 }
 
 .contentContainer {
@@ -40,4 +41,5 @@
   font-size: 10px;
   text-align: center;
   color: #1EFFBC;
+  font-weight: 600;
 }

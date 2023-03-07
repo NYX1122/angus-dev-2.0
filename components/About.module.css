@@ -25,12 +25,11 @@
 .descriptionContainer p {
   color: black;
   font-size: 13px;
-  font-weight: 400;
   
   text-align: center;
 }
 
-.doContainer {
+.outerItemsContainer {
   padding: 5vh 15px;
 
   display: flex;

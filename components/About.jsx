@@ -16,7 +16,7 @@ import changeGraphic from '../public/changeGraphic.svg';
 import moneyGraphic from '../public/moneyGraphic.svg';
 
 export default function About() {
-  const aboutItemArray = [
+  const aboutItemArrayOne = [
     {
       id: 'designGraphic',
       image: designGraphic,
@@ -41,6 +41,9 @@ export default function About() {
       content:
         'Search engine optimization strategies, also known as SEO strategies, are used by our developers to ensure that any website we code always appears as high as it can possibly be in the millions of results that appear from google searches, giving your business a competitive edge over the rest.',
     },
+  ];
+
+  const aboutItemArrayTwo = [
     {
       id: 'performanceGraphic',
       image: performanceGraphic,
@@ -86,10 +89,24 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className={styles.doContainer}>
+      <div className={styles.outerItemsContainer}>
         <AboutTitle content='What We Do'></AboutTitle>
         <div className={styles.itemsContainer}>
-          {aboutItemArray.map((item) => (
+          {aboutItemArrayOne.map((item) => (
+            <AboutItem
+              key={item.id}
+              image={item.image}
+              imageAlt={item.imageAlt}
+              title={item.title}
+              content={item.content}
+            ></AboutItem>
+          ))}
+        </div>
+      </div>
+      <div className={styles.outerItemsContainer}>
+        <AboutTitle content='What We Offer'></AboutTitle>
+        <div className={styles.itemsContainer}>
+          {aboutItemArrayTwo.map((item) => (
             <AboutItem
               key={item.id}
               image={item.image}

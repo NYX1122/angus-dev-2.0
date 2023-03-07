@@ -1,0 +1,87 @@
+.container {
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.prefaceContainer {
+  height: calc(100vh - 37px);
+  padding: 7vh 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10vh;
+
+  position: relative;
+}
+
+.sectionTitleContainer {
+  position: relative;
+}
+
+.subscriptionContainer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4vh;
+}
+
+.subscriptionContainer h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.priceContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1vh 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceContainer h2 {
+  position: relative;
+  text-align: center;
+  font-size: 36px;
+  color: black;
+  font-weight: 400;
+  text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.prefaceParagraphContainer {
+  position: relative;
+  margin-top: 2.5vh;
+  height: 100%;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prefaceParagraphContainer p {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.prefaceParagraphGraphicContainer {
+  position: absolute;
+  height: 35vh;
+  width: 304px;
+  top: -2.5vh;
+}
