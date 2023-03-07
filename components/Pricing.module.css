@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 4vh;
+  gap: 6vh;
 }
 
 .subscriptionContainer h1 {
@@ -84,4 +84,16 @@
   height: 200px;
   width: 304px;
   top: -20px;
+}
+
+.detailsOuterContainer {
+  background-color: black;
+  padding: 20px;
+}
+
+.detailsInnerContainer {
+  background-color: #1EFFBC;
+  border: 3px solid white;
+  border-radius: 40px;
+  padding: 4px 15px 15px 15px;
 }

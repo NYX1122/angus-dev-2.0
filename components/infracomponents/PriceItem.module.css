@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  width: 298.2px;
+}
+
+.titleGraphic {
+  position: absolute;
+  height: 80px;
+  width: 299px;
+}
+
+.titleContainer {
+  position: relative;
+  padding-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.titleContainer h1 {
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+
+.graphic {
+  position: relative;
+  left: -5px;
+  height: calc(20px*1.4);
+  width: calc(167.69px*1.4);
+}
+
+.bulletsContainer {
+  margin-top: 20px;
+  padding: 35px 10px 10px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: black;
+  border-radius: 0 0 25px 25px;
+}
+
+.bulletsContainer li {
+  font-size: 12px;
+}
