@@ -17,24 +17,32 @@
   position: absolute;
   left: 0;
   top: 0;
+  width: 40vw;
+  height: 40vw;
 }
 
 .topRightCornerHero {
   position: absolute;
   right: 0;
   top: 0;
+  width: 40vw;
+  height: 40vw;
 }
 
 .bottomLeftCornerHero {
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 40vw;
+  height: 40vw;
 }
 
 .bottomRightCornerHero {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 40vw;
+  height: 40vw;
 }
 
 .sloganContainer {
