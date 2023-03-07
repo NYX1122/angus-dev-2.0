@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <>
       <div className={styles.container}>
-        {graphicDataArray.map((item, index) => (
+        {graphicDataArray.map((item) => (
           <Image
             src={item.image}
             alt='Code graphic'

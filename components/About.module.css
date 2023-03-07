@@ -31,11 +31,21 @@
 }
 
 .doContainer {
-  padding: 5vh 0;
+  padding: 5vh 15px;
 
   display: flex;
   flex-direction: column;
   justify-Content: center;
+  align-items: center;
+  gap: 7vh;
+
+  position: relative;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 7vh;
 }
