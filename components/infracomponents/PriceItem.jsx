@@ -23,32 +23,14 @@ export default function PriceItem({
         <div className={styles.titleContainer}>
           <h1>{title}</h1>
         </div>
-        <ul className={styles.bulletsContainer}>
-          <div
-            className={
-              (id = 'customWebDesign'
-                ? styles.customWebDesign
-                : (id = 'professionalCoding'
-                    ? styles.professionalCoding
-                    : (id = 'webHosting'
-                        ? styles.webHosting
-                        : (id = 'siteMaintenance'
-                            ? styles.siteMaintenance
-                            : (id = 'unlimmitedChanges'
-                                ? styles.unlimitedChanges
-                                : (id = 'seoStrategies'
-                                    ? styles.seoStrategies
-                                    : (id = 'ecommerceStores'
-                                        ? styles.ecommerceStores
-                                        : styles.websiteAnalytics)))))))
-            }
-          >
+        <div className={styles.bulletsContainer}>
+          <div className={styles[id]}>
             <Image src={graphic} alt={graphicAlt} fill={true}></Image>
           </div>
           {bulletPoints.map((item) => (
-            <li key={item.id}>{item.content}</li>
+            <p key={item.id}>{item.content}</p>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );

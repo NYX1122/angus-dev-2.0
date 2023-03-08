@@ -36,7 +36,7 @@
 
 .professionalCoding {
   position: relative;
-  height: 40px;
+  height: 50px;
   width: 100%;
 
   display: flex;
@@ -45,7 +45,7 @@
 
 .webHosting {
   position: relative;
-  height: 40px;
+  height: 50px;
   width: 100%;
 
   display: flex;
@@ -54,7 +54,7 @@
 
 .siteMaintenance {
   position: relative;
-  height: calc(20px*1.4);
+  height: 40px;
   width: 100%;
 
   display: flex;
@@ -63,7 +63,7 @@
 
 .unlimitedChanges {
   position: relative;
-  height: calc(20px*1.4);
+  height: 25px;
   width: 100%;
 
   display: flex;
@@ -72,7 +72,7 @@
 
 .seoStrategies {
   position: relative;
-  height: calc(20px*1.4);
+  height: 25px;
   width: 100%;
 
   display: flex;
@@ -81,7 +81,7 @@
 
 .ecommerceStores {
   position: relative;
-  height: calc(20px*1.4);
+  height: 50px;
   width: 100%;
 
   display: flex;
@@ -90,16 +90,7 @@
 
 .websiteAnalytics {
   position: relative;
-  height: calc(20px*1.4);
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-}
-
-.professionalCoding {
-  position: relative;
-  height: calc(20px*1.4);
+  height: 55px;
   width: 100%;
 
   display: flex;
@@ -111,17 +102,22 @@
 .bulletsContainer {
   margin-top: 20px;
 
-  padding: 40px 15px 15px 15px;
+  padding: 35px 15px 15px 15px;
   list-style-position: inside;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   background-color: black;
   border-radius: 0 0 25px 25px;
 }
 
-.bulletsContainer li {
-  font-size: 12px;
+.bulletsContainer p {
+  color: black;
+  font-size: 16px;
+  background-color: #1EFFBC;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
 }
