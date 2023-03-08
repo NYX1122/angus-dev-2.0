@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './PriceItem.module.css';
 
 export default function PriceItem({
+  id,
   title,
   graphic,
   graphicAlt,
@@ -23,7 +24,25 @@ export default function PriceItem({
           <h1>{title}</h1>
         </div>
         <ul className={styles.bulletsContainer}>
-          <div className={styles.graphic}>
+          <div
+            className={
+              (id = 'customWebDesign'
+                ? styles.customWebDesign
+                : (id = 'professionalCoding'
+                    ? styles.professionalCoding
+                    : (id = 'webHosting'
+                        ? styles.webHosting
+                        : (id = 'siteMaintenance'
+                            ? styles.siteMaintenance
+                            : (id = 'unlimmitedChanges'
+                                ? styles.unlimitedChanges
+                                : (id = 'seoStrategies'
+                                    ? styles.seoStrategies
+                                    : (id = 'ecommerceStores'
+                                        ? styles.ecommerceStores
+                                        : styles.websiteAnalytics)))))))
+            }
+          >
             <Image src={graphic} alt={graphicAlt} fill={true}></Image>
           </div>
           {bulletPoints.map((item) => (

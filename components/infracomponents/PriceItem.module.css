@@ -23,20 +23,100 @@
   color: black;
 }
 
-.graphic {
+/* Custom classes for each graphic in the details section, so that they can be sized correctly */
+
+.customWebDesign {
   position: relative;
-  left: -5px;
   height: calc(20px*1.4);
-  width: calc(167.69px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
 }
+
+.professionalCoding {
+  position: relative;
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.webHosting {
+  position: relative;
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.siteMaintenance {
+  position: relative;
+  height: calc(20px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.unlimitedChanges {
+  position: relative;
+  height: calc(20px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.seoStrategies {
+  position: relative;
+  height: calc(20px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.ecommerceStores {
+  position: relative;
+  height: calc(20px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.websiteAnalytics {
+  position: relative;
+  height: calc(20px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.professionalCoding {
+  position: relative;
+  height: calc(20px*1.4);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .bulletsContainer {
   margin-top: 20px;
-  padding: 35px 10px 10px 28px;
+
+  padding: 40px 15px 15px 15px;
+  list-style-position: inside;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   background-color: black;
   border-radius: 0 0 25px 25px;

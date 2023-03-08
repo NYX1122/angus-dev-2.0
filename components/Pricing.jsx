@@ -14,6 +14,10 @@ import detailCustomGraphic from '../public/detailCustomGraphic.svg';
 import detailProfessionalGraphic from '../public/detailProfessionalGraphic.svg';
 import detailHostingGraphic from '../public/detailHostingGraphic.svg';
 import detailMaintenanceGraphic from '../public/detailMaintenanceGraphic.svg';
+import detailChangesGraphic from '../public/detailChangesGraphic.svg';
+import detailStrategiesGraphic from '../public/detailStrategiesGraphic.svg';
+import detailEcommerceGraphic from '../public/detailEcommerceGraphic.svg';
+import detailAnalyticsGraphic from '../public/detailAnalyticsGraphic.svg';
 
 export default function Pricing() {
   const detailsContentArray = [
@@ -97,21 +101,117 @@ export default function Pricing() {
       bulletPoints: [
         {
           id: 'siteMaintenance1',
-          content:
-            'Hosted on high traffic capacity servers for fastest loading times.',
+          content: 'Regular testing to ensure functionality and usability.',
         },
         {
           id: 'siteMaintenance2',
           content:
-            'Utilization of SSL/TLS (HTTPS) for encryption of sensitive data as well as regular site authentication.',
+            'Security monitoring and updates against any new vulnerabilities.',
         },
         {
           id: 'siteMaintenance3',
-          content: 'Individualized database setups.',
+          content:
+            'Performance monitoring to ensure fully optimized site speed.',
         },
         {
           id: 'siteMaintenance4',
-          content: 'Hashed API keys and user information for maximum security.',
+          content:
+            'Supervised updates to any software used in creation to maintain browser compatibility.',
+        },
+      ],
+    },
+    {
+      id: 'unlimitedChanges',
+      title: 'Unlimted Changes',
+      graphic: detailChangesGraphic,
+      graphicAlt: 'A pencil that symbolizes editing the design of a web page.',
+      bulletPoints: [
+        {
+          id: 'unlimitedChanges1',
+          content:
+            'Design and deployment of any content changes that your business will ever need.',
+        },
+        {
+          id: 'unlimitedChanges2',
+          content:
+            'Constant communication with our team for any questions or concerns.',
+        },
+      ],
+    },
+    {
+      id: 'seoStrategies',
+      title: 'SEO Strategies',
+      graphic: detailStrategiesGraphic,
+      graphicAlt: 'A search bar that symbolizes SEO strategies.',
+      bulletPoints: [
+        {
+          id: 'seoStrategies1',
+          content:
+            'Optimized URLs that are keyword rich to satisfy search engine standards.',
+        },
+        {
+          id: 'seoStrategies2',
+          content:
+            'Schema markup so that search engines can understand the layout of your site.',
+        },
+        {
+          id: 'seoStrategies3',
+          content:
+            'Optimized for local search, enhancing competitive advantage in local markets.',
+        },
+        {
+          id: 'seoStrategies4',
+          content:
+            'Descriptive titles and meta descriptions for search engine identification.',
+        },
+      ],
+    },
+    {
+      id: 'ecommerceStores',
+      title: 'E-commerce Stores',
+      graphic: detailEcommerceGraphic,
+      graphicAlt: 'A dollar bill that symbolizes E-commerce.',
+      bulletPoints: [
+        {
+          id: 'ecommerceStores1',
+          content: 'Fully integrated payment methods using Stripe API.',
+        },
+        {
+          id: 'ecommerceStores2',
+          content:
+            'Sell products and/or services directly to customers that access your site.',
+        },
+        {
+          id: 'ecommerceStores3',
+          content: 'Accept donations or create fundraisers.',
+        },
+      ],
+    },
+    {
+      id: 'websiteAnalytics',
+      title: 'Website Analytics',
+      graphic: detailAnalyticsGraphic,
+      graphicAlt: 'A graph that symbolizes analytical data.',
+      bulletPoints: [
+        {
+          id: 'websiteAnalytics1',
+          content:
+            'Receive regular reports on customer interactions with your site.',
+        },
+        {
+          id: 'websiteAnalytics2',
+          content:
+            'Pageview metrics to show how often customers visit your website and how long they view it.',
+        },
+        {
+          id: 'websiteAnalytics3',
+          content:
+            'Traffic sources reports that record how customers access your site.',
+        },
+        {
+          id: 'websiteAnalytics4',
+          content:
+            'Customer demographic metrics that can provide unique and valuable insights into the types of customers that are interested in your business.',
         },
       ],
     },
@@ -154,6 +254,7 @@ export default function Pricing() {
             {detailsContentArray.map((item) => (
               <PriceItem
                 backgroundGraphic={pricingDetailTitleBackground}
+                id={item.id}
                 key={item.id}
                 graphicAlt={item.graphicAlt}
                 graphic={item.graphic}
