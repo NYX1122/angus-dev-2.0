@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
-import PricingButton from './pricingButton';
+import PricingButton from './PricingButton';
 
 import Image from 'next/image';
 
