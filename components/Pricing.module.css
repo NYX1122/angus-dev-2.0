@@ -10,14 +10,13 @@
 }
 
 .prefaceContainer {
-  height: 650px;
-  padding: 7vh 0 0 0;
+  padding: 45px 0 85px 0;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 10vh;
+  gap: 50px;
 
   position: relative;
 }
@@ -33,7 +32,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 6vh;
+  gap: 20px;
 }
 
 .subscriptionContainer h1 {
@@ -45,7 +44,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  padding: 1vh 10px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +61,7 @@
 
 .prefaceParagraphContainer {
   position: relative;
-  margin-top: 2.5vh;
-  height: 100%;
+  margin-top: 25px;
   width: 270px;
   display: flex;
   justify-content: center;
@@ -95,5 +93,11 @@
   background-color: #1EFFBC;
   border: 3px solid white;
   border-radius: 40px;
-  padding: 4px 15px 15px 15px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }

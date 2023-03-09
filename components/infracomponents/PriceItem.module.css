@@ -1,3 +1,8 @@
+.outerContainer {
+  background-color: black;
+  border-radius: 35px 35px 20px 20px;
+}
+
 .container {
   position: relative;
   width: 298.2px;
@@ -100,15 +105,12 @@
 
 
 .bulletsContainer {
-  margin-top: 20px;
-
-  padding: 35px 15px 15px 15px;
+  padding: 13px;
   list-style-position: inside;
 
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: black;
   border-radius: 0 0 25px 25px;
 }
 
@@ -117,7 +119,7 @@
   font-size: 16px;
   background-color: #1EFFBC;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   font-weight: 500;
 }

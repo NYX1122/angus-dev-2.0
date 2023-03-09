@@ -1,0 +1,25 @@
+.buttonContainer {
+  width: 299px;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.innerContainer {
+  width: 299px;
+  height: 56px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer h1 {
+  position: absolute;
+  z-index: 5;
+  color: black;
+}

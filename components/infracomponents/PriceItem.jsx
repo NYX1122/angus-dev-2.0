@@ -1,3 +1,5 @@
+import PricingButton from './pricingButton';
+
 import Image from 'next/image';
 
 import styles from './PriceItem.module.css';
@@ -11,9 +13,10 @@ export default function PriceItem({
   backgroundGraphic,
 }) {
   return (
-    <>
+    <div className={styles.outerContainer}>
+      <PricingButton content={title}></PricingButton>
       <div className={styles.container}>
-        <div className={styles.titleGraphic}>
+        {/* <div className={styles.titleGraphic}>
           <Image
             src={backgroundGraphic}
             alt='Shiny background for buttons.'
@@ -22,7 +25,8 @@ export default function PriceItem({
         </div>
         <div className={styles.titleContainer}>
           <h1>{title}</h1>
-        </div>
+        </div> */}
+
         <div className={styles.bulletsContainer}>
           <div className={styles[id]}>
             <Image src={graphic} alt={graphicAlt} fill={true}></Image>
@@ -32,6 +36,6 @@ export default function PriceItem({
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
