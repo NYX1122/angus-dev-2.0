@@ -1,11 +1,13 @@
 .outerContainer {
-  background-color: black;
-  border-radius: 35px 35px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  position: relative;
-  width: 298.2px;
+.ugggh {
+  width: 299px;
+  height: 56px;
 }
 
 .titleGraphic {
@@ -102,16 +104,14 @@
   justify-content: center;
 }
 
-
-
 .bulletsContainer {
   padding: 13px;
-  list-style-position: inside;
 
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border-radius: 0 0 25px 25px;
+  background-color: black;
+  border-radius: 35px 35px 20px 20px;
 }
 
 .bulletsContainer p {

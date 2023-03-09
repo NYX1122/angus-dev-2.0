@@ -1,3 +1,5 @@
+import { motion, LayoutGroup } from 'framer-motion';
+
 import SectionTitle from './infracomponents/SectionTitle';
 import PriceItem from './infracomponents/PriceItem';
 
@@ -250,19 +252,27 @@ export default function Pricing() {
           </div>
         </div>
         <div className={styles.detailsOuterContainer}>
-          <div className={styles.detailsInnerContainer}>
-            {detailsContentArray.map((item) => (
-              <PriceItem
-                backgroundGraphic={pricingDetailTitleBackground}
-                id={item.id}
-                key={item.id}
-                graphicAlt={item.graphicAlt}
-                graphic={item.graphic}
-                title={item.title}
-                bulletPoints={item.bulletPoints}
-              ></PriceItem>
-            ))}
-          </div>
+          <LayoutGroup>
+            <motion.div
+              className={styles.detailsInnerContainer}
+              style={{ borderRadius: '40px' }}
+              layout
+            >
+              <LayoutGroup>
+                {detailsContentArray.map((item) => (
+                  <motion.div layout='preserve-aspect' key={item.id}>
+                    <PriceItem
+                      id={item.id}
+                      graphicAlt={item.graphicAlt}
+                      graphic={item.graphic}
+                      title={item.title}
+                      bulletPoints={item.bulletPoints}
+                    ></PriceItem>
+                  </motion.div>
+                ))}
+              </LayoutGroup>
+            </motion.div>
+          </LayoutGroup>
         </div>
       </div>
     </>

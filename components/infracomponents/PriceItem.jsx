@@ -1,3 +1,7 @@
+import { useState } from 'react';
+
+import { motion, AnimatePresence } from 'framer-motion';
+
 import PricingButton from './pricingButton';
 
 import Image from 'next/image';
@@ -10,32 +14,44 @@ export default function PriceItem({
   graphic,
   graphicAlt,
   bulletPoints,
-  backgroundGraphic,
 }) {
-  return (
-    <div className={styles.outerContainer}>
-      <PricingButton content={title}></PricingButton>
-      <div className={styles.container}>
-        {/* <div className={styles.titleGraphic}>
-          <Image
-            src={backgroundGraphic}
-            alt='Shiny background for buttons.'
-            fill={true}
-          ></Image>
-        </div>
-        <div className={styles.titleContainer}>
-          <h1>{title}</h1>
-        </div> */}
+  const [isOpen, setOpen] = useState(false);
 
-        <div className={styles.bulletsContainer}>
-          <div className={styles[id]}>
-            <Image src={graphic} alt={graphicAlt} fill={true}></Image>
-          </div>
-          {bulletPoints.map((item) => (
-            <p key={item.id}>{item.content}</p>
-          ))}
-        </div>
-      </div>
+  return (
+    <div className={styles.outerContainer} onClick={() => setOpen(!isOpen)}>
+      <PricingButton content={title}></PricingButton>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className={styles.bulletsContainer}
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            exit={{ delay: 0.2, scaleY: 0 }}
+            layout
+          >
+            <motion.div
+              className={styles[id]}
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1, scaleX: 1 }}
+              exit={{ opacity: 0, scaleX: 0 }}
+              transition={{ delay: 0.05 }}
+            >
+              <Image src={graphic} alt={graphicAlt} fill={true}></Image>
+            </motion.div>
+            {bulletPoints.map((item) => (
+              <motion.p
+                key={item.id}
+                initial={{ opacity: 0, scaleX: 0 }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                exit={{ opacity: 0, scaleX: 0 }}
+                transition={{ delay: 0.1 }}
+              >
+                {item.content}
+              </motion.p>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
