@@ -1,6 +1,6 @@
 import SectionTitle from './infracomponents/SectionTitle';
 
-import styles from './Contact.Module.css';
+import styles from './Contact.module.css';
 
 export default function Contact() {
   const formItemsArray = [
