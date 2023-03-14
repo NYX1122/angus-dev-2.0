@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Header from '../components/header';
+import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Pricing from '../components/Pricing';
