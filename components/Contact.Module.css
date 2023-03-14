@@ -1,0 +1,87 @@
+.outerContainer {
+  /* sizing */
+
+  /* position */
+
+  /* children organizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  /* padding and margin */
+  padding: 30px;
+
+  /* borders */
+
+  /* colors */
+  background-color: black;
+
+  /* font */
+}
+
+.formContainer {
+  /* sizing */
+  width: 300px;
+  /* position */
+
+  /* children organizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* padding and margin */
+  padding: 15px;
+
+  /* borders */
+  border-radius: 40px;
+
+  /* colors */
+  background-color: #1EFFBC;
+
+  /* font */
+}
+
+.formItemOuterContainer {
+  /* sizing */
+  width: 100%;
+
+  /* position */
+
+  /* children organizing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding and margin */
+  padding-left: 10px;
+
+  /* borders */
+  border: 2px solid white;
+  border-radius: 10px;
+
+  /* colors */
+
+  /* font */
+}
+
+.formItemOuterContainer h3{
+  /* sizing */
+
+  /* position */
+
+  /* children organizing */
+
+  /* padding and margin */
+
+  /* borders */
+
+  /* colors */
+  color: black;
+
+  /* font */
+  font-size: 20px;
+}

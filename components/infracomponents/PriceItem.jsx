@@ -26,7 +26,7 @@ export default function PriceItem({
             className={styles.bulletsContainer}
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
-            exit={{ delay: 0.2, scaleY: 0 }}
+            exit={{ scaleY: 0 }}
             layout
           >
             <motion.div

@@ -10,8 +10,6 @@ import styles from './Pricing.module.css';
 import priceContainerGraphic from '../public/priceContainerGraphic.svg';
 import paragraphContainerGraphic from '../public/paragraphContainerGraphic.svg';
 
-import pricingDetailTitleBackground from '../public/pricingDetailTitleBackground.svg';
-
 import detailCustomGraphic from '../public/detailCustomGraphic.svg';
 import detailProfessionalGraphic from '../public/detailProfessionalGraphic.svg';
 import detailHostingGraphic from '../public/detailHostingGraphic.svg';

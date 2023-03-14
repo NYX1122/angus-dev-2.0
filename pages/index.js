@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Header from '../components/header';
-import Hero from '../components/hero';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
 import About from '../components/About';
 import Pricing from '../components/Pricing';
+import Contact from '../components/Contact';
 
 import styles from '@/styles/Home.module.css';
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero></Hero>
         <About></About>
         <Pricing></Pricing>
+        <Contact></Contact>
       </main>
     </>
   );
