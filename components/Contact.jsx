@@ -18,8 +18,13 @@ export default function Contact() {
         {formItemsArray.map((item) => (
           <div key={item.id} className={styles.formItemOuterContainer}>
             <h3>{item.text}</h3>
+            <textarea
+              rows={item.text === 'Message:' ? 5 : 1}
+              className={styles.formItemFieldContainer}
+            ></textarea>
           </div>
         ))}
+        <button>Submit</button>
       </div>
     </div>
   );
