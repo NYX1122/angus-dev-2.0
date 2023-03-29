@@ -1,69 +1,68 @@
 .container {
   /* sizing */
-  width: 100%;
-  
+  height: 100vh;
+
   /* position */
   position: fixed;
-  top: 0;
+  top: 37px;
+  right: 0;
   z-index: 100;
 
   /* children organizing */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
   align-items: center;
-  
+
   /* padding and margin */
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  
+  padding: 15px;
+
   /* borders */
-  
+
   /* colors */
   background: #1EFFBC;
-  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
 
   /* font */
 }
 
-.companyName {
+.linksContainer {
+  /* sizing */
+
+  /* position */
+
+  /* children organizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px
+
+  /* padding and margin */
+
+  /* borders */
+
+  /* colors */
+
+  /* font */
+}
+
+.linksContainer a {
   /* sizing */
   
   /* position */
-  
+
   /* children organizing */
-  display: inline-block;
-  
+
   /* padding and margin */
-  
+
   /* borders */
-  
+  border-bottom: 3px solid black;
+
   /* colors */
   color: black;
-  text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
 
   /* font */
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.button {
-  /* sizing */
-  
-  /* position */
-
-  /* children organizing */
-
-  /* padding and margin */
-  padding: 0;
-
-  /* borders */
-  border: none;
-
-  /* colors */
-  background: none;
-
-  /* font */
-
+  font-size: 24px;
+  font-weight: 500;
 }
