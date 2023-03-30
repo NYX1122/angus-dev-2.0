@@ -8,7 +8,12 @@ import menuLogo from '../../public/menuLogo.svg';
 import toggleCircle from '../../public/toggleCircle.svg';
 import toggleBar from '../../public/toggleBar.svg';
 
-export default function Menu({ isMenuOpen, setMenuOpen }) {
+export default function Menu({
+  isMenuOpen,
+  setMenuOpen,
+  lightMode,
+  setLightMode,
+}) {
   const linkArray = [
     { id: 'about', name: 'About' },
     { id: 'pricing', name: 'Pricing' },
@@ -47,7 +52,10 @@ export default function Menu({ isMenuOpen, setMenuOpen }) {
         </div>
         <div className={styles.lightToggleOuterContainer}>
           <h3>Light Mode:</h3>
-          <div className={styles.lightToggleInnerContainer}>
+          <div
+            className={styles.lightToggleInnerContainer}
+            onClick={() => setLightMode(!lightMode)}
+          >
             <Image
               src={toggleBar}
               alt='Toggle Bar'

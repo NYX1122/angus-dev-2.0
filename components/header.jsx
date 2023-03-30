@@ -10,7 +10,7 @@ import styles from './Header.module.css';
 
 import menuLines from '../public/menuLines.svg';
 
-export default function Header() {
+export default function Header({ lightMode, setLightMode }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <>
@@ -27,7 +27,12 @@ export default function Header() {
       </div>
       <AnimatePresence>
         {isMenuOpen && (
-          <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen}></Menu>
+          <Menu
+            isMenuOpen={isMenuOpen}
+            setMenuOpen={setMenuOpen}
+            lightMode={lightMode}
+            setLightMode={setLightMode}
+          ></Menu>
         )}
       </AnimatePresence>
     </>

@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Head from 'next/head';
 import Header from '../components/header';
 import Hero from '../components/hero';
@@ -8,6 +10,7 @@ import Contact from '../components/Contact';
 import styles from '@/styles/Home.module.css';
 
 export default function Home() {
+  const [lightMode, setLightMode] = useState(false);
   return (
     <>
       <Head>
@@ -17,11 +20,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.mainContainer}>
-        <Header></Header>
-        <Hero></Hero>
-        <About></About>
-        <Pricing></Pricing>
-        <Contact></Contact>
+        <Header lightMode={lightMode} setLightMode={setLightMode}></Header>
+        <Hero lightMode={lightMode}></Hero>
+        <About lightMode={lightMode} setLightMode={setLightMode}></About>
+        <Pricing lightMode={lightMode} setLightMode={setLightMode}></Pricing>
+        <Contact lightMode={lightMode} setLightMode={setLightMode}></Contact>
       </main>
     </>
   );

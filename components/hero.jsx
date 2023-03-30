@@ -3,21 +3,44 @@ import Image from 'next/image';
 import styles from './Hero.module.css';
 
 import topLeftCornerHero from '../public/topLeftCornerHero.svg';
+import topLeftCornerHeroLight from '../public/topLeftCornerHeroLight.svg';
 import topRightCornerHero from '../public/topRightCornerHero.svg';
+import topRightCornerHeroLight from '../public/topRightCornerHeroLight.svg';
 import bottomLeftCornerHero from '../public/bottomLeftCornerHero.svg';
+import bottomLeftCornerHeroLight from '../public/bottomLeftCornerHeroLight.svg';
 import bottomRightCornerHero from '../public/bottomRightCornerHero.svg';
+import bottomRightCornerHeroLight from '../public/bottomRightCornerHeroLight.svg';
 import logo from '../public/logo.svg';
+import logoLight from '../public/logoLight.svg';
 
-export default function Hero() {
+export default function Hero({ lightMode }) {
   const graphicDataArray = [
-    { id: 'topLeftCorner', image: topLeftCornerHero },
-    { id: 'topRightCorner', image: topRightCornerHero },
-    { id: 'bottomLeftCorner', image: bottomLeftCornerHero },
-    { id: 'bottomRightCorner', image: bottomRightCornerHero },
+    {
+      id: 'topLeftCorner',
+      image: lightMode ? topLeftCornerHeroLight : topLeftCornerHero,
+    },
+    {
+      id: 'topRightCorner',
+      image: lightMode ? topRightCornerHeroLight : topRightCornerHero,
+    },
+    {
+      id: 'bottomLeftCorner',
+      image: lightMode ? bottomLeftCornerHeroLight : bottomLeftCornerHero,
+    },
+    {
+      id: 'bottomRightCorner',
+      image: lightMode ? bottomRightCornerHeroLight : bottomRightCornerHero,
+    },
   ];
   return (
     <>
-      <div className={styles.container}>
+      <div
+        className={
+          lightMode
+            ? `${styles['container']} ${styles['light']}`
+            : styles.container
+        }
+      >
         {graphicDataArray.map((item) => (
           <Image
             src={item.image}
@@ -34,14 +57,38 @@ export default function Hero() {
             }
           ></Image>
         ))}
-        <Image src={logo} alt='Company logo'></Image>
+        <Image src={lightMode ? logoLight : logo} alt='Company logo'></Image>
         <div className={styles.sloganContainer}>
-          <div className={styles.lineContainer}>
+          <div
+            className={
+              lightMode
+                ? `${styles['lineContainer']} ${styles['light']}`
+                : styles.lineContainer
+            }
+          >
             <h2>Web Development</h2>
           </div>
-          <div className={styles.lineContainer}>
-            <div className={styles.bottomInnerContainer}>
-              <h2 className={styles.bottomText}>{`<Simplified/>`}</h2>
+          <div
+            className={
+              lightMode
+                ? `${styles['lineContainer']} ${styles['light']}`
+                : styles.lineContainer
+            }
+          >
+            <div
+              className={
+                lightMode
+                  ? `${styles['bottomInnerContainer']} ${styles['light']}`
+                  : styles.bottomInnerContainer
+              }
+            >
+              <h3
+                className={
+                  lightMode
+                    ? `${styles['bottomText']} ${styles['light']}`
+                    : styles.bottomText
+                }
+              >{`<Simplified/>`}</h3>
             </div>
           </div>
         </div>
