@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { AnimatePresence } from 'framer-motion';
+
 import Menu from './infracomponents/Menu';
 
 import Image from 'next/image';
@@ -23,7 +25,11 @@ export default function Header() {
           </div>
         </button>
       </div>
-      {isMenuOpen && <Menu></Menu>}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen}></Menu>
+        )}
+      </AnimatePresence>
     </>
   );
 }

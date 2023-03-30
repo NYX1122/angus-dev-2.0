@@ -12,7 +12,7 @@ export default function Contact() {
     { id: 'message', text: 'Message:' },
   ];
   return (
-    <div className={styles.outerContainer}>
+    <div className={styles.outerContainer} id='Contact'>
       <SectionTitle content='Contact Us' />
       <div className={styles.formContainer}>
         {formItemsArray.map((item) => (

@@ -71,7 +71,7 @@ export default function About() {
   ];
   return (
     <>
-      <div className={styles.prefaceContainer}>
+      <div className={styles.prefaceContainer} id='About'>
         <SectionTitle content='About Us'></SectionTitle>
         <Image
           src={developerGraphic}

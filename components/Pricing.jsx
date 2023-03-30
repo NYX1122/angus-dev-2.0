@@ -218,7 +218,7 @@ export default function Pricing() {
   ];
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id='Pricing'>
         <div className={styles.prefaceContainer}>
           <div className={styles.sectionTitleContainer}>
             <SectionTitle content='Pricing'></SectionTitle>

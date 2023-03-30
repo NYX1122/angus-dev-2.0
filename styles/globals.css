@@ -11,6 +11,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background: #1EFFBC;
+  scroll-behavior: smooth;
 }
 
 a {
