@@ -87,6 +87,7 @@
 .detailsOuterContainer {
   background-color: black;
   padding: 20px;
+  width: 370px;
 }
 
 .detailsInnerContainer {
