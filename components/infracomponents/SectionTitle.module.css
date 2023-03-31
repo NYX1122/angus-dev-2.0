@@ -6,8 +6,18 @@
   padding: 0px 5px;
 }
 
+.container.light {
+  background-color: white;
+  border-color: #5C6F68;
+  outline-color: white;
+}
+
 .container h1 {
   color: black;
   font-weight: 400;
   font-size: 32px;
+}
+
+.container.light h1 {
+  color: #5C6F68;
 }

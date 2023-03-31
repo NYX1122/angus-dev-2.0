@@ -27,6 +27,10 @@
   /* font */
 }
 
+.container.light {
+  background: white;
+}
+
 .companyName {
   /* sizing */
   
@@ -48,6 +52,10 @@
   font-weight: 700;
 }
 
+.companyName.light {
+  color: #5C6F68;
+}
+
 .button {
   /* sizing */
   
@@ -66,4 +74,8 @@
 
   /* font */
 
+}
+
+.menuLogo.light {
+  filter: invert(41%) sepia(18%) saturate(293%) hue-rotate(106deg) brightness(97%) contrast(91%);
 }

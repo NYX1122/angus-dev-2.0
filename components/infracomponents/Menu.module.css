@@ -64,6 +64,10 @@
   /* font */
 }
 
+.container.light {
+  background: white;
+}
+
 .linksContainer {
   /* sizing */
 
@@ -105,6 +109,15 @@
   font-weight: 500;
 }
 
+.linksContainer.light a {
+  color: #5C6F68;
+  border-bottom-color: #5C6F68;
+}
+
+.menuLogo.light {
+  filter: invert(41%) sepia(18%) saturate(293%) hue-rotate(106deg) brightness(97%) contrast(91%);
+}
+
 .lightToggleOuterContainer {
   /* sizing */
   
@@ -143,6 +156,10 @@
   /* font */
   font-size: 12px;
   font-weight: 500;
+}
+
+.lightBarText.light {
+  color: #5C6F68;
 }
 
 .lightToggleInnerContainer {

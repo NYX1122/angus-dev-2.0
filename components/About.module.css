@@ -13,6 +13,10 @@
   height: calc(100vh - 37px);
 }
 
+.prefaceContainer.light {
+  background-color: #5C6F68;
+}
+
 .descriptionContainer {
   background-color: #1EFFBC;
   border: 3px solid black;
@@ -22,11 +26,21 @@
   padding: 5px;
 }
 
+.descriptionContainer.light {
+  background-color: white;
+  outline-color: white;
+  border-color: #5C6F68;
+}
+
 .descriptionContainer p {
   color: black;
-  font-size: 13px;
+  font-size: 15px;
   
   text-align: center;
+}
+
+.descriptionContainer.light p {
+  color: #5C6F68;
 }
 
 .outerItemsContainer {
@@ -39,6 +53,11 @@
   gap: 7vh;
 
   position: relative;
+  background-color: #1EFFBC;
+}
+
+.outerItemsContainer.light {
+  background-color: white;
 }
 
 .itemsContainer {

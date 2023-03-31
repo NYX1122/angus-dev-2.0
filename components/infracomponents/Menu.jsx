@@ -31,14 +31,33 @@ export default function Menu({
       ></motion.div>
       <motion.div
         key='2'
-        className={styles.container}
+        className={
+          lightMode
+            ? `${styles['container']} ${styles['light']}`
+            : styles.container
+        }
         initial={{ x: 200 }}
         animate={{ x: 0 }}
         exit={{ x: 200 }}
       >
-        <div className={styles.linksContainer}>
+        <div
+          className={
+            lightMode
+              ? `${styles['linksContainer']} ${styles['light']}`
+              : styles.linksContainer
+          }
+        >
           <>
-            <Image src={menuLogo} alt='Menu logo' width='93'></Image>
+            <Image
+              src={menuLogo}
+              alt='Menu logo'
+              width='93'
+              className={
+                lightMode
+                  ? `${styles['menuLogo']} ${styles['light']}`
+                  : styles.menuLogo
+              }
+            ></Image>
             {linkArray.map((item) => (
               <a
                 key={item.id}
@@ -51,7 +70,15 @@ export default function Menu({
           </>
         </div>
         <div className={styles.lightToggleOuterContainer}>
-          <h3>Light Mode:</h3>
+          <h3
+            className={
+              lightMode
+                ? `${styles['lightBarText']} ${styles['light']}`
+                : styles.lightBarText
+            }
+          >
+            Light Mode:
+          </h3>
           <div
             className={styles.lightToggleInnerContainer}
             onClick={() => setLightMode(!lightMode)}

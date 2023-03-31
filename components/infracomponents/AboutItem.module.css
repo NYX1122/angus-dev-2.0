@@ -21,9 +21,18 @@
   border-radius: 0 0 10px 10px;
 }
 
+.descriptionContainer.light {
+  border-color: #5C6F68;
+  background-color: #5C6F68;
+}
+
 .titleContainer {
   padding: 5px;
   background-color: #1EFFBC;
+}
+
+.titleContainer.light {
+  background-color: white;
 }
 
 .titleContainer h1 {
@@ -31,6 +40,10 @@
   color: black;
   text-align: center;
   font-weight: 600;
+}
+
+.titleContainer.light h1 {
+  color: #5C6F68;
 }
 
 .contentContainer {
@@ -42,4 +55,8 @@
   text-align: center;
   color: #1EFFBC;
   font-weight: 600;
+}
+
+.contentContainer.light p {
+  color: white;
 }

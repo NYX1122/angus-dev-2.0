@@ -33,66 +33,64 @@ export default function Hero({ lightMode }) {
     },
   ];
   return (
-    <>
-      <div
-        className={
-          lightMode
-            ? `${styles['container']} ${styles['light']}`
-            : styles.container
-        }
-      >
-        {graphicDataArray.map((item) => (
-          <Image
-            src={item.image}
-            alt='Code graphic'
-            key={item.id}
-            className={
-              item.id === 'topLeftCorner'
-                ? styles.topLeftCornerHero
-                : item.id === 'topRightCorner'
-                ? styles.topRightCornerHero
-                : item.id === 'bottomLeftCorner'
-                ? styles.bottomLeftCornerHero
-                : styles.bottomRightCornerHero
-            }
-          ></Image>
-        ))}
-        <Image src={lightMode ? logoLight : logo} alt='Company logo'></Image>
-        <div className={styles.sloganContainer}>
+    <div
+      className={
+        lightMode
+          ? `${styles['container']} ${styles['light']}`
+          : styles.container
+      }
+    >
+      {graphicDataArray.map((item) => (
+        <Image
+          src={item.image}
+          alt='Code graphic'
+          key={item.id}
+          className={
+            item.id === 'topLeftCorner'
+              ? styles.topLeftCornerHero
+              : item.id === 'topRightCorner'
+              ? styles.topRightCornerHero
+              : item.id === 'bottomLeftCorner'
+              ? styles.bottomLeftCornerHero
+              : styles.bottomRightCornerHero
+          }
+        ></Image>
+      ))}
+      <Image src={lightMode ? logoLight : logo} alt='Company logo'></Image>
+      <div className={styles.sloganContainer}>
+        <div
+          className={
+            lightMode
+              ? `${styles['lineContainer']} ${styles['light']}`
+              : styles.lineContainer
+          }
+        >
+          <h2>Web Development</h2>
+        </div>
+        <div
+          className={
+            lightMode
+              ? `${styles['lineContainer']} ${styles['light']}`
+              : styles.lineContainer
+          }
+        >
           <div
             className={
               lightMode
-                ? `${styles['lineContainer']} ${styles['light']}`
-                : styles.lineContainer
+                ? `${styles['bottomInnerContainer']} ${styles['light']}`
+                : styles.bottomInnerContainer
             }
           >
-            <h2>Web Development</h2>
-          </div>
-          <div
-            className={
-              lightMode
-                ? `${styles['lineContainer']} ${styles['light']}`
-                : styles.lineContainer
-            }
-          >
-            <div
+            <h3
               className={
                 lightMode
-                  ? `${styles['bottomInnerContainer']} ${styles['light']}`
-                  : styles.bottomInnerContainer
+                  ? `${styles['bottomText']} ${styles['light']}`
+                  : styles.bottomText
               }
-            >
-              <h3
-                className={
-                  lightMode
-                    ? `${styles['bottomText']} ${styles['light']}`
-                    : styles.bottomText
-                }
-              >{`<Simplified/>`}</h3>
-            </div>
+            >{`<Simplified/>`}</h3>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

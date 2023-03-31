@@ -7,19 +7,27 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 import developerGraphic from '../public/developerGraphic.svg';
+import developerGraphicLight from '../public/developerGraphicLight.svg';
 
 import designGraphic from '../public/designGraphic.svg';
+import designGraphicLight from '../public/designGraphicLight.svg';
 import deviceGraphic from '../public/deviceGraphic.svg';
+import deviceGraphicLight from '../public/deviceGraphicLight.svg';
 import seoGraphic from '../public/seoGraphic.svg';
+import seoGraphicLight from '../public/seoGraphicLight.svg';
 import performanceGraphic from '../public/performanceGraphic.svg';
+import performanceGraphicLight from '../public/performanceGraphicLight.svg';
 import changeGraphic from '../public/changeGraphic.svg';
+import changeGraphicLight from '../public/changeGraphicLight.svg';
 import moneyGraphic from '../public/moneyGraphic.svg';
+import moneyGraphicLight from '../public/moneyGraphicLight.svg';
 
-export default function About() {
+export default function About({ lightMode }) {
   const aboutItemArrayOne = [
     {
       id: 'designGraphic',
       image: designGraphic,
+      imageLight: designGraphicLight,
       imageAlt: 'Graphic depicting design principles.',
       title: 'Design Beautiful, User Friendly Layouts',
       content:
@@ -28,6 +36,7 @@ export default function About() {
     {
       id: 'deviceGraphic',
       image: deviceGraphic,
+      imageLight: deviceGraphicLight,
       imageAlt: 'Graphic depicting device layout principles.',
       title: 'Write Fast, Reliable, and Responsive Code',
       content:
@@ -36,6 +45,7 @@ export default function About() {
     {
       id: 'seoGraphic',
       image: seoGraphic,
+      imageLight: seoGraphicLight,
       imageAlt: 'Graphic depicting search engine optimization principles.',
       title: 'Apply Advantageous SEO Strategies',
       content:
@@ -47,6 +57,7 @@ export default function About() {
     {
       id: 'performanceGraphic',
       image: performanceGraphic,
+      imageLight: performanceGraphicLight,
       imageAlt: 'Graphic depicting site performance monitoring.',
       title: 'Constant Site Performance monitoring',
       content:
@@ -55,6 +66,7 @@ export default function About() {
     {
       id: 'changeGraphic',
       image: changeGraphic,
+      imageLight: changeGraphicLight,
       imageAlt: 'Graphic depicting the edit of a site design.',
       title: 'Changes to Site Layout at Anytime',
       content:
@@ -63,6 +75,7 @@ export default function About() {
     {
       id: 'moneyGraphic',
       image: moneyGraphic,
+      imageLight: moneyGraphicLight,
       imageAlt: 'Graphic depicting a hand holding a wallet.',
       title: 'Affordable Payment Options',
       content:
@@ -71,13 +84,26 @@ export default function About() {
   ];
   return (
     <>
-      <div className={styles.prefaceContainer} id='About'>
-        <SectionTitle content='About Us'></SectionTitle>
+      <div
+        className={
+          lightMode
+            ? `${styles['prefaceContainer']} ${styles['light']}`
+            : styles.prefaceContainer
+        }
+        id='About'
+      >
+        <SectionTitle content='About Us' lightMode={lightMode}></SectionTitle>
         <Image
-          src={developerGraphic}
+          src={lightMode ? developerGraphicLight : developerGraphic}
           alt='Graphic depicting a web developer'
         ></Image>
-        <div className={styles.descriptionContainer}>
+        <div
+          className={
+            lightMode
+              ? `${styles['descriptionContainer']} ${styles['light']}`
+              : styles.descriptionContainer
+          }
+        >
           <p>
             We are a small business empowering other small businesses with high
             quality websites and beautiful designs. It is our goal to give your
@@ -89,30 +115,46 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className={styles.outerItemsContainer}>
-        <AboutTitle content='What We Do'></AboutTitle>
+      <div
+        className={
+          lightMode
+            ? `${styles['outerItemsContainer']} ${styles['light']}`
+            : styles.outerItemsContainer
+        }
+      >
+        <AboutTitle content='What We Do' lightMode={lightMode}></AboutTitle>
         <div className={styles.itemsContainer}>
           {aboutItemArrayOne.map((item) => (
             <AboutItem
               key={item.id}
               image={item.image}
+              imageLight={item.imageLight}
               imageAlt={item.imageAlt}
               title={item.title}
               content={item.content}
+              lightMode={lightMode}
             ></AboutItem>
           ))}
         </div>
       </div>
-      <div className={styles.outerItemsContainer}>
-        <AboutTitle content='What We Offer'></AboutTitle>
+      <div
+        className={
+          lightMode
+            ? `${styles['outerItemsContainer']} ${styles['light']}`
+            : styles.outerItemsContainer
+        }
+      >
+        <AboutTitle content='What We Offer' lightMode={lightMode}></AboutTitle>
         <div className={styles.itemsContainer}>
           {aboutItemArrayTwo.map((item) => (
             <AboutItem
               key={item.id}
               image={item.image}
+              imageLight={item.imageLight}
               imageAlt={item.imageAlt}
               title={item.title}
               content={item.content}
+              lightMode={lightMode}
             ></AboutItem>
           ))}
         </div>
