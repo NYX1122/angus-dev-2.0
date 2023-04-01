@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.container.light {
+  background-color: #5C6F68;
+}
+
 .prefaceContainer {
   padding: 45px 0 85px 0;
 
@@ -40,6 +44,10 @@
   font-size: 24px;
 }
 
+.subscriptionContainer.light h1 {
+  color: #1EFFBC;
+}
+
 .priceContainer {
   position: relative;
   height: 100%;
@@ -57,6 +65,10 @@
   color: black;
   font-weight: 400;
   text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.priceContainer.light h2 {
+  color: #5C6F68;
 }
 
 .prefaceParagraphContainer {
@@ -77,6 +89,10 @@
   text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
 }
 
+.prefaceParagraphContainer.light p {
+  color: #5C6F68;
+}
+
 .prefaceParagraphGraphicContainer {
   position: absolute;
   height: 200px;
@@ -90,6 +106,10 @@
   width: 370px;
 }
 
+.detailsOuterContainer.light {
+  background-color: #5C6F68;
+}
+
 .detailsInnerContainer {
   background-color: #1EFFBC;
   border: 3px solid white;
@@ -101,4 +121,8 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+.detailsInnerContainer.light {
+  background-color: white;
 }

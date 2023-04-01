@@ -8,7 +8,9 @@ import Image from 'next/image';
 import styles from './Pricing.module.css';
 
 import priceContainerGraphic from '../public/priceContainerGraphic.svg';
+import priceContainerGraphicLight from '../public/priceContainerGraphicLight.svg';
 import paragraphContainerGraphic from '../public/paragraphContainerGraphic.svg';
+import paragraphContainerGraphicLight from '../public/paragraphContainerGraphicLight.svg';
 
 import detailCustomGraphic from '../public/detailCustomGraphic.svg';
 import detailProfessionalGraphic from '../public/detailProfessionalGraphic.svg';
@@ -19,7 +21,7 @@ import detailStrategiesGraphic from '../public/detailStrategiesGraphic.svg';
 import detailEcommerceGraphic from '../public/detailEcommerceGraphic.svg';
 import detailAnalyticsGraphic from '../public/detailAnalyticsGraphic.svg';
 
-export default function Pricing() {
+export default function Pricing({ lightMode }) {
   const detailsContentArray = [
     {
       id: 'customWebDesign',
@@ -218,25 +220,59 @@ export default function Pricing() {
   ];
   return (
     <>
-      <div className={styles.container} id='Pricing'>
+      <div
+        className={
+          lightMode
+            ? `${styles['container']} ${styles['light']}`
+            : styles.container
+        }
+        id='Pricing'
+      >
         <div className={styles.prefaceContainer}>
           <div className={styles.sectionTitleContainer}>
-            <SectionTitle content='Pricing'></SectionTitle>
+            <SectionTitle
+              content='Pricing'
+              lightMode={lightMode}
+            ></SectionTitle>
           </div>
-          <div className={styles.subscriptionContainer}>
-            <div className={styles.priceContainer}>
+          <div
+            className={
+              lightMode
+                ? `${styles['subscriptionContainer']} ${styles['light']}`
+                : styles.subscriptionContainer
+            }
+          >
+            <div
+              className={
+                lightMode
+                  ? `${styles['priceContainer']} ${styles['light']}`
+                  : styles.priceContainer
+              }
+            >
               <Image
-                src={priceContainerGraphic}
+                src={
+                  lightMode ? priceContainerGraphicLight : priceContainerGraphic
+                }
                 alt='Shiny background placed behind the price.'
                 fill={true}
               ></Image>
               <h2>$200 Per Month</h2>
             </div>
             <h1>It's that easy.</h1>
-            <div className={styles.prefaceParagraphContainer}>
+            <div
+              className={
+                lightMode
+                  ? `${styles['prefaceParagraphContainer']} ${styles['light']}`
+                  : styles.prefaceParagraphContainer
+              }
+            >
               <div className={styles.prefaceParagraphGraphicContainer}>
                 <Image
-                  src={paragraphContainerGraphic}
+                  src={
+                    lightMode
+                      ? paragraphContainerGraphicLight
+                      : paragraphContainerGraphic
+                  }
                   alt='Shiny background behind paragraph explaining subscription tier.'
                   fill={true}
                 ></Image>
@@ -249,10 +285,20 @@ export default function Pricing() {
             </div>
           </div>
         </div>
-        <div className={styles.detailsOuterContainer}>
+        <div
+          className={
+            lightMode
+              ? `${styles['detailsOuterContainer']} ${styles['light']}`
+              : styles.detailsOuterContainer
+          }
+        >
           <LayoutGroup>
             <motion.div
-              className={styles.detailsInnerContainer}
+              className={
+                lightMode
+                  ? `${styles['detailsInnerContainer']} ${styles['light']}`
+                  : styles.detailsInnerContainer
+              }
               style={{ borderRadius: '40px' }}
               layout
             >

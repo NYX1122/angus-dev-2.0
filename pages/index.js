@@ -22,9 +22,9 @@ export default function Home() {
       <main className={styles.mainContainer}>
         <Header lightMode={lightMode} setLightMode={setLightMode}></Header>
         <Hero lightMode={lightMode}></Hero>
-        <About lightMode={lightMode} setLightMode={setLightMode}></About>
-        <Pricing lightMode={lightMode} setLightMode={setLightMode}></Pricing>
-        <Contact lightMode={lightMode} setLightMode={setLightMode}></Contact>
+        <About lightMode={lightMode}></About>
+        <Pricing lightMode={lightMode}></Pricing>
+        <Contact lightMode={lightMode}></Contact>
       </main>
     </>
   );
