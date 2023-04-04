@@ -5,11 +5,6 @@
   align-items: center;
 }
 
-.ugggh {
-  width: 299px;
-  height: 56px;
-}
-
 .titleGraphic {
   position: absolute;
   height: 80px;
@@ -114,6 +109,10 @@
   border-radius: 35px 35px 20px 20px;
 }
 
+.bulletsContainer.light {
+  background-color: #5C6F68;
+}
+
 .bulletsContainer p {
   color: black;
   font-size: 16px;
@@ -122,4 +121,8 @@
   border-radius: 10px;
   text-align: center;
   font-weight: 500;
+}
+
+.bulletsContainer.light p {
+  background-color: white;
 }

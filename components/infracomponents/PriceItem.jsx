@@ -9,9 +9,11 @@ import Image from 'next/image';
 import styles from './PriceItem.module.css';
 
 export default function PriceItem({
+  lightMode,
   id,
   title,
   graphic,
+  graphicLight,
   graphicAlt,
   bulletPoints,
 }) {
@@ -19,11 +21,15 @@ export default function PriceItem({
 
   return (
     <div className={styles.outerContainer} onClick={() => setOpen(!isOpen)}>
-      <PricingButton content={title}></PricingButton>
+      <PricingButton content={title} lightMode={lightMode}></PricingButton>
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className={styles.bulletsContainer}
+            className={
+              lightMode
+                ? `${styles['bulletsContainer']} ${styles['light']}`
+                : styles.bulletsContainer
+            }
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             exit={{ scaleY: 0 }}
@@ -36,7 +42,11 @@ export default function PriceItem({
               exit={{ opacity: 0, scaleX: 0 }}
               transition={{ delay: 0.05 }}
             >
-              <Image src={graphic} alt={graphicAlt} fill={true}></Image>
+              <Image
+                src={lightMode ? graphicLight : graphic}
+                alt={graphicAlt}
+                fill={true}
+              ></Image>
             </motion.div>
             {bulletPoints.map((item) => (
               <motion.p

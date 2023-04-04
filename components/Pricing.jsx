@@ -9,17 +9,33 @@ import styles from './Pricing.module.css';
 
 import priceContainerGraphic from '../public/priceContainerGraphic.svg';
 import priceContainerGraphicLight from '../public/priceContainerGraphicLight.svg';
+
 import paragraphContainerGraphic from '../public/paragraphContainerGraphic.svg';
 import paragraphContainerGraphicLight from '../public/paragraphContainerGraphicLight.svg';
 
 import detailCustomGraphic from '../public/detailCustomGraphic.svg';
+import detailCustomGraphicLight from '../public/detailCustomGraphicLight.svg';
+
 import detailProfessionalGraphic from '../public/detailProfessionalGraphic.svg';
+import detailProfessionalGraphicLight from '../public/detailProfessionalGraphicLight.svg';
+
 import detailHostingGraphic from '../public/detailHostingGraphic.svg';
+import detailHostingGraphicLight from '../public/detailHostingGraphicLight.svg';
+
 import detailMaintenanceGraphic from '../public/detailMaintenanceGraphic.svg';
+import detailMaintenanceGraphicLight from '../public/detailMaintenanceGraphicLight.svg';
+
 import detailChangesGraphic from '../public/detailChangesGraphic.svg';
+import detailChangesGraphicLight from '../public/detailChangesGraphicLight.svg';
+
 import detailStrategiesGraphic from '../public/detailStrategiesGraphic.svg';
+import detailStrategiesGraphicLight from '../public/detailStrategiesGraphicLight.svg';
+
 import detailEcommerceGraphic from '../public/detailEcommerceGraphic.svg';
+import detailEcommerceGraphicLight from '../public/detailEcommerceGraphicLight.svg';
+
 import detailAnalyticsGraphic from '../public/detailAnalyticsGraphic.svg';
+import detailAnalyticsGraphicLight from '../public/detailAnalyticsGraphicLight.svg';
 
 export default function Pricing({ lightMode }) {
   const detailsContentArray = [
@@ -27,6 +43,7 @@ export default function Pricing({ lightMode }) {
       id: 'customWebDesign',
       title: 'Custom Web Design',
       graphic: detailCustomGraphic,
+      graphicLight: detailCustomGraphicLight,
       graphicAlt: 'A paintbursh symbolizing web design.',
       bulletPoints: [
         {
@@ -53,6 +70,7 @@ export default function Pricing({ lightMode }) {
       id: 'professionalCoding',
       title: 'Professional Coding',
       graphic: detailProfessionalGraphic,
+      graphicLight: detailProfessionalGraphicLight,
       graphicAlt: 'HTML brackets that symbolize code.',
       bulletPoints: [
         {
@@ -77,6 +95,7 @@ export default function Pricing({ lightMode }) {
       id: 'webHosting',
       title: 'Web Hosting',
       graphic: detailHostingGraphic,
+      graphicLight: detailHostingGraphicLight,
       graphicAlt: 'A modem that symbolizes web hosting.',
       bulletPoints: [
         {
@@ -99,6 +118,7 @@ export default function Pricing({ lightMode }) {
       id: 'siteMaintenance',
       title: 'Site Maintenance',
       graphic: detailMaintenanceGraphic,
+      graphicLight: detailMaintenanceGraphicLight,
       graphicAlt: 'A modem that symbolizes web hosting.',
       bulletPoints: [
         {
@@ -126,6 +146,7 @@ export default function Pricing({ lightMode }) {
       id: 'unlimitedChanges',
       title: 'Unlimted Changes',
       graphic: detailChangesGraphic,
+      graphicLight: detailChangesGraphicLight,
       graphicAlt: 'A pencil that symbolizes editing the design of a web page.',
       bulletPoints: [
         {
@@ -144,6 +165,7 @@ export default function Pricing({ lightMode }) {
       id: 'seoStrategies',
       title: 'SEO Strategies',
       graphic: detailStrategiesGraphic,
+      graphicLight: detailStrategiesGraphicLight,
       graphicAlt: 'A search bar that symbolizes SEO strategies.',
       bulletPoints: [
         {
@@ -172,6 +194,7 @@ export default function Pricing({ lightMode }) {
       id: 'ecommerceStores',
       title: 'E-commerce Stores',
       graphic: detailEcommerceGraphic,
+      graphicLight: detailEcommerceGraphicLight,
       graphicAlt: 'A dollar bill that symbolizes E-commerce.',
       bulletPoints: [
         {
@@ -193,6 +216,7 @@ export default function Pricing({ lightMode }) {
       id: 'websiteAnalytics',
       title: 'Website Analytics',
       graphic: detailAnalyticsGraphic,
+      graphicLight: detailAnalyticsGraphicLight,
       graphicAlt: 'A graph that symbolizes analytical data.',
       bulletPoints: [
         {
@@ -306,9 +330,11 @@ export default function Pricing({ lightMode }) {
                 {detailsContentArray.map((item) => (
                   <motion.div layout='preserve-aspect' key={item.id}>
                     <PriceItem
+                      lightMode={lightMode}
                       id={item.id}
                       graphicAlt={item.graphicAlt}
                       graphic={item.graphic}
+                      graphicLight={item.graphicLight}
                       title={item.title}
                       bulletPoints={item.bulletPoints}
                     ></PriceItem>

@@ -27,3 +27,7 @@
   z-index: 5;
   color: black;
 }
+
+.innerContainer.light h1 {
+  color: #5C6F68;
+}
