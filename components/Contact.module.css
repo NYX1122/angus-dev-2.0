@@ -21,6 +21,10 @@
   /* font */
 }
 
+.outerContainer.light {
+  background-color: #5C6F68;
+}
+
 .formContainer {
   /* sizing */
   width: 300px;
@@ -43,6 +47,10 @@
   background-color: #1EFFBC;
 
   /* font */
+}
+
+.formContainer.light {
+  background-color: white;
 }
 
 .formItemOuterContainer {
@@ -71,6 +79,10 @@
   /* font */
 }
 
+.formItemOuterContainer.light {
+  border-color: #1EFFBC;
+}
+
 .formItemOuterContainer h3{
   /* sizing */
 
@@ -92,6 +104,10 @@
 
   /* font */
   font-size: 18px;
+}
+
+.formItemOuterContainer.light h3{
+  color: #5C6F68;
 }
 
 .formItemFieldContainer {
@@ -117,6 +133,11 @@
   font-size: 18px;
 }
 
+.formItemFieldContainer.light {
+  outline-color: #1EFFBC;
+  color: black;
+}
+
 .formContainer button {
   /* sizing */
   width: 100%;
@@ -139,4 +160,10 @@
   /* font */
   font-size: 18px;
   color: black;
+}
+
+.formContainer.light button {
+  border-color: #1EFFBC;
+  background-color: white;
+  color: #5C6F68;
 }
