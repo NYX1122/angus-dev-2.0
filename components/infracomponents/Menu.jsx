@@ -86,14 +86,31 @@ export default function Menu({
             <Image
               src={toggleBar}
               alt='Toggle Bar'
-              className={styles.toggleBar}
+              className={
+                lightMode
+                  ? `${styles['toggleBar']} ${styles['light']}`
+                  : styles.toggleBar
+              }
             ></Image>
-            <Image
-              src={toggleCircle}
-              alt='Toggle Circle'
-              width='12'
-              className={styles.toggleCircle}
-            ></Image>
+            <motion.div
+              animate={lightMode ? 'on' : 'off'}
+              variants={{
+                on: { x: 13, y: -6 },
+                off: { x: 0, y: -6 },
+              }}
+              transition={{ duration: 0.2 }}
+            >
+              <Image
+                src={toggleCircle}
+                alt='Toggle Circle'
+                width='12'
+                className={
+                  lightMode
+                    ? `${styles['toggleCircle']} ${styles['light']}`
+                    : styles.toggleCircle
+                }
+              ></Image>
+            </motion.div>
           </div>
         </div>
       </motion.div>

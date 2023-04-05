@@ -214,3 +214,11 @@
 
   /* font */
 }
+
+.toggleBar.light {
+  filter: invert(42%) sepia(28%) saturate(205%) hue-rotate(106deg) brightness(92%) contrast(86%);
+}
+
+.toggleCircle.light {
+  filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(75deg) brightness(0%) contrast(104%);
+}
