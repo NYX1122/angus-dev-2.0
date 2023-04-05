@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import SectionTitle from './infracomponents/SectionTitle';
 
 import styles from './Contact.module.css';
@@ -48,7 +50,7 @@ export default function Contact({ lightMode }) {
             ></textarea>
           </div>
         ))}
-        <button>Submit</button>
+        <motion.button whileTap={{ scale: 0.9 }}>Submit</motion.button>
       </div>
     </div>
   );
