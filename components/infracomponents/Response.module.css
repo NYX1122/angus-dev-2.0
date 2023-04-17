@@ -21,31 +21,36 @@
 }
 
 .container {
-  /* sizing */
-    width: 350px;
-  
-    /* position */
-    position: fixed;
-    bottom: calc(35vh);
-    left: calc(50vw - 175px);
-  
-    /* children organizing */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10px;
-  
-    /* padding and margin */
-    padding: 10px;
-  
-    /* borders */
-    border-radius: 10px;
-    border: solid white 3px;
-  
-    /* colors */
-    background-color: #1EFFBC;
-  
-    /* font */
+/* sizing */
+  width: 350px;
+
+  /* position */
+  position: fixed;
+  bottom: calc(35vh);
+  left: calc(50vw - 175px);
+
+  /* children organizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+
+  /* padding and margin */
+  padding: 10px;
+
+  /* borders */
+  border-radius: 10px;
+  border: solid white 3px;
+
+  /* colors */
+  background-color: #1EFFBC;
+
+  /* font */
+}
+
+.container.light {
+  border-color: #1EFFBC;
+  background-color: white;
 }
 
 .container h1 {
@@ -92,8 +97,7 @@
   color: black;
 }
 
-.formContainer.light button {
+.container.light button {
   border-color: #1EFFBC;
   background-color: white;
-  color: #5C6F68;
 }

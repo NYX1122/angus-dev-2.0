@@ -11,7 +11,13 @@ export default function Response({ setResponseEl, responseEl, lightMode }) {
           : styles.outerContainer
       }
     >
-      <div className={styles.container}>
+      <div
+        className={
+          lightMode
+            ? `${styles['container']} ${styles['light']}`
+            : styles.container
+        }
+      >
         <h1>
           {responseEl === 'success'
             ? 'Your contact information has been submitted successfully. Please expect a call from us within the next 24 hours.'
