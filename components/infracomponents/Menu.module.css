@@ -39,7 +39,7 @@
 
 .container {
   /* sizing */
-  height: calc(100vh - 37px);
+  height: calc(100dvh - 37px);
 
   /* position */
   position: fixed;
