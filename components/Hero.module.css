@@ -10,7 +10,7 @@
   gap: 7vh;
 
   position: relative;
-  height: calc(100vh - 37px);
+  height: calc(100dvh - 37px);
 }
 
 .container.light {
