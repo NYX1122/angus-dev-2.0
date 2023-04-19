@@ -21,7 +21,7 @@
   background-color: #1EFFBC;
   border: 3px solid black;
   outline: 3px solid #1EFFBC;
-  -webkit-border-radius: 15px;
+  -webkit-outline-radius: 15px;
   border-radius: 15px;
   padding: 5px;
 }
