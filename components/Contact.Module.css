@@ -126,9 +126,10 @@
   padding: 3px 7px;
 
   /* borders */
+  box-shadow: 0 0 0 2px white;
   border: 0px;
-  outline: 2px solid white;
-  border-radius: 8px;
+
+  border-radius: 9px;
 
   /* colors */
   background-color: rgba(0, 0, 0, 0.25);
