@@ -106,6 +106,10 @@
   font-size: 18px;
 }
 
+.formItemFieldContainer::placeholder {
+  color: #C6DED5;
+}
+
 .formItemOuterContainer.light h3{
   color: #5C6F68;
 }
