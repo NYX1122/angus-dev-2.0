@@ -126,6 +126,8 @@
   padding: 3px 7px;
 
   /* borders */
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 0 2px white;
   box-shadow: 0 0 0 2px white;
   border: 0px;
 
