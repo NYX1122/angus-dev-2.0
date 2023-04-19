@@ -41,8 +41,8 @@ export default function Contact({ lightMode }) {
   const validationRGEX = {
     name: /^([a-zA-Z]{2,20})$/,
     phone: /^([0-9]{3})-([0-9]{3})-([0-9]{4})$/,
-    email: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
-    business: /^([a-zA-Z]{2,50})$/,
+    email: /^([a-zA-Z0-9_\.-]+)@([\da-zA-Z\.-]+)\.([a-zA-Z\.]{2,6})$/,
+    business: /^([a-z A-Z\d\S]{2,50})$/,
   };
 
   //loads information from spreadsheet
