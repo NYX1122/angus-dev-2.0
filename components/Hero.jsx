@@ -56,7 +56,11 @@ export default function Hero({ lightMode }) {
           }
         ></Image>
       ))}
-      <Image src={lightMode ? logoLight : logo} alt='Company logo'></Image>
+      <Image
+        src={lightMode ? logoLight : logo}
+        alt='Company logo'
+        className={styles.logo}
+      ></Image>
       <div className={styles.sloganContainer}>
         <div
           className={

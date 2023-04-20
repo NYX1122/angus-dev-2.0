@@ -96,3 +96,23 @@
 .bottomText.light {
   color: #5C6F68;
 }
+
+@media (min-width: 750px) {
+  .logo {
+    width: 375px;
+    height: 400px;
+  }
+
+  .lineContainer, .lineContainer.light {
+    border-width: 6px;
+    padding: 6px;
+  }
+
+  .lineContainer h2 {
+    font-size: 60px;
+  }
+
+  .lineContainer h3 {
+    font-size: 60px;
+  }
+}
