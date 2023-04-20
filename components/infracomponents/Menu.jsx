@@ -51,7 +51,8 @@ export default function Menu({
             <Image
               src={menuLogo}
               alt='Menu logo'
-              width='93'
+              height='110'
+              width='140'
               className={
                 lightMode
                   ? `${styles['menuLogo']} ${styles['light']}`
@@ -86,6 +87,7 @@ export default function Menu({
             <Image
               src={toggleBar}
               alt='Toggle Bar'
+              width='36'
               className={
                 lightMode
                   ? `${styles['toggleBar']} ${styles['light']}`
@@ -95,7 +97,7 @@ export default function Menu({
             <motion.div
               animate={lightMode ? 'on' : 'off'}
               variants={{
-                on: { x: 13, y: -6 },
+                on: { x: 18, y: -6 },
                 off: { x: 0, y: -6 },
               }}
               transition={{ duration: 0.2 }}
@@ -103,7 +105,7 @@ export default function Menu({
               <Image
                 src={toggleCircle}
                 alt='Toggle Circle'
-                width='12'
+                width='17'
                 className={
                   lightMode
                     ? `${styles['toggleCircle']} ${styles['light']}`

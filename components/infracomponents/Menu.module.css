@@ -70,6 +70,7 @@
 
 .linksContainer {
   /* sizing */
+  width: 100%;
 
   /* position */
 
@@ -105,13 +106,18 @@
   color: black;
 
   /* font */
-  font-size: 25px;
+  font-size: 34px;
   font-weight: 500;
 }
 
 .linksContainer.light a {
   color: #5C6F68;
   border-bottom-color: #5C6F68;
+}
+
+.menuLogo {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .menuLogo.light {
@@ -154,7 +160,7 @@
   color: black;
 
   /* font */
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -173,6 +179,7 @@
   align-items: center;
 
   /* padding and margin */
+  padding-right: 35px;
 
   /* borders */
 
@@ -207,6 +214,23 @@
 
   /* padding and margin */
   margin: 0px 0px 0px 1px;
+
+  /* borders */
+
+  /* colors */
+
+  /* font */
+}
+
+.toggleCircle {
+  /* sizing */
+  
+  /* position */
+
+  /* children organizing */
+
+  /* padding and margin */
+  margin: -2.5px 0px 0px 0px;
 
   /* borders */
 
