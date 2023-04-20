@@ -13,10 +13,7 @@
   align-items: center;
   
   /* padding and margin */
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 10px;
   
   /* borders */
   
@@ -76,6 +73,38 @@
 
 }
 
+.menuLogo {
+  width: 40px;
+}
+
 .menuLogo.light {
   filter: invert(41%) sepia(18%) saturate(293%) hue-rotate(106deg) brightness(97%) contrast(91%);
+}
+
+@media (min-width: 750px) {
+  .container {
+    padding: 10px 15px;
+  }
+
+  .companyName {
+    /* sizing */
+
+    /* position */
+
+    /* children organizing */
+
+    /* padding and margin */
+
+    /* borders */
+
+    /* colors */
+
+    /* font */
+    font-size: 35px;
+  }
+
+  .menuLogo {
+    width: 100px;
+    height: 30px;
+  }
 }

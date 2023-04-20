@@ -38,7 +38,6 @@ export default function Header({ lightMode, setLightMode }) {
             <Image
               src={menuLines}
               alt='Menu icon'
-              width='12.5%'
               className={
                 lightMode
                   ? `${styles['menuLogo']} ${styles['light']}`
