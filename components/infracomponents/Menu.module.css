@@ -116,6 +116,8 @@
 }
 
 .menuLogo {
+  height: 110px;
+  width: 140px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -170,29 +172,11 @@
 
 .lightToggleInnerContainer {
   /* sizing */
+  width: 36px;
+  height: 17px;
   
   /* position */
-
-  /* children organizing */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  /* padding and margin */
-  padding-right: 35px;
-
-  /* borders */
-
-  /* colors */
-
-  /* font */
-}
-
-.lightToggleInnerContainer img {
-  /* sizing */
-  
-  /* position */
-  position: absolute;
+  position: relative;
 
   /* children organizing */
 
@@ -207,13 +191,16 @@
 
 .toggleBar {
   /* sizing */
+
+  width: 36px;
+  height: 17px;
   
   /* position */
+  position: relative;
 
   /* children organizing */
 
   /* padding and margin */
-  margin: 0px 0px 0px 1px;
 
   /* borders */
 
@@ -222,15 +209,36 @@
   /* font */
 }
 
+.toggleCircleOuterContainer {
+  position: relative;
+  bottom: 22px;
+  width: 36px;
+  height: 17px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toggleCircleOuterContainer[data-lightmode="true"] {
+  justify-content: flex-end;
+}
+
+.toggleCircleInnerContainer {
+  position: relative;
+  width: 17px;
+  height: 17px;
+}
+
 .toggleCircle {
   /* sizing */
+  width: 17px;
+  height: 17px;
   
   /* position */
+  position: relative;
 
   /* children organizing */
 
   /* padding and margin */
-  margin: -2.5px 0px 0px 0px;
 
   /* borders */
 
@@ -245,4 +253,58 @@
 
 .toggleCircle.light {
   filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(75deg) brightness(0%) contrast(104%);
+}
+
+@media (min-width: 750px) {
+  .overlay {
+    top: 68px;
+  }
+
+  .container {
+    height: calc(100dvh - 68px);
+    top: 67px;
+    padding: 20px;
+  }
+
+  .menuLogo {
+    height: 200px;
+    width: 235px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .linksContainer a {
+    font-size: 60px;
+    border-bottom-width: 6px;
+  }
+
+  .lightToggleOuterContainer h3 {
+    font-size: 30px;
+  }
+
+  .lightToggleInnerContainer {
+    width: 65px;
+    height: 30px;
+  }
+
+  .toggleBar {
+    width: 65px;
+    height: 30px;
+  }
+
+  .toggleCircleOuterContainer {
+    bottom: 35px;
+    width: 65px;
+    height: 30px;
+  }
+
+  .toggleCircleInnerContainer {
+    width: 30px;
+    height: 30px;
+  }
+
+  .toggleCircle {
+    width: 30px;
+    height: 30px;
+  }
 }

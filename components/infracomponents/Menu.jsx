@@ -36,9 +36,9 @@ export default function Menu({
             ? `${styles['container']} ${styles['light']}`
             : styles.container
         }
-        initial={{ x: 200 }}
+        initial={{ x: 275 }}
         animate={{ x: 0 }}
-        exit={{ x: 200 }}
+        exit={{ x: 275 }}
       >
         <div
           className={
@@ -51,8 +51,6 @@ export default function Menu({
             <Image
               src={menuLogo}
               alt='Menu logo'
-              height='110'
-              width='140'
               className={
                 lightMode
                   ? `${styles['menuLogo']} ${styles['light']}`
@@ -87,32 +85,32 @@ export default function Menu({
             <Image
               src={toggleBar}
               alt='Toggle Bar'
-              width='36'
               className={
                 lightMode
                   ? `${styles['toggleBar']} ${styles['light']}`
                   : styles.toggleBar
               }
             ></Image>
-            <motion.div
-              animate={lightMode ? 'on' : 'off'}
-              variants={{
-                on: { x: 18, y: -6 },
-                off: { x: 0, y: -6 },
-              }}
-              transition={{ duration: 0.2 }}
+            <div
+              className={styles.toggleCircleOuterContainer}
+              data-lightmode={lightMode}
             >
-              <Image
-                src={toggleCircle}
-                alt='Toggle Circle'
-                width='17'
-                className={
-                  lightMode
-                    ? `${styles['toggleCircle']} ${styles['light']}`
-                    : styles.toggleCircle
-                }
-              ></Image>
-            </motion.div>
+              <motion.div
+                layout
+                transition={{ duration: 0.2 }}
+                className={styles.toggleCircleInnerContainer}
+              >
+                <Image
+                  src={toggleCircle}
+                  alt='Toggle Circle'
+                  className={
+                    lightMode
+                      ? `${styles['toggleCircle']} ${styles['light']}`
+                      : styles.toggleCircle
+                  }
+                ></Image>
+              </motion.div>
+            </div>
           </div>
         </div>
       </motion.div>

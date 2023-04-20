@@ -103,6 +103,10 @@
     height: 400px;
   }
 
+  .sloganContainer {
+    gap: 35px;
+  }
+
   .lineContainer, .lineContainer.light {
     border-width: 6px;
     padding: 6px;
