@@ -96,6 +96,7 @@ export default function About({ lightMode }) {
         <Image
           src={lightMode ? developerGraphicLight : developerGraphic}
           alt='Graphic depicting a web developer'
+          className={styles.developerGraphic}
         ></Image>
         <div
           className={
