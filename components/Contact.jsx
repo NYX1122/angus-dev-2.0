@@ -133,7 +133,7 @@ export default function Contact({ lightMode }) {
   };
 
   return (
-    <>
+    <motion.div layout>
       <div
         className={
           lightMode
@@ -186,6 +186,6 @@ export default function Contact({ lightMode }) {
           lightMode={lightMode}
         ></Response>
       )}
-    </>
+    </motion.div>
   );
 }

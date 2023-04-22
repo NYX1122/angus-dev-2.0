@@ -11,9 +11,11 @@
   gap: 30px;
 
   /* padding and margin */
-  padding: 30px;
+  margin: 15px;
+  padding: 25px;
 
   /* borders */
+  border-radius: 20px;
 
   /* colors */
   background-color: black;

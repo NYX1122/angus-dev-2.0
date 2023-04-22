@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { motion, LayoutGroup } from 'framer-motion';
+
 import Head from 'next/head';
 import Header from '../components/header';
 import Hero from '../components/hero';
@@ -20,11 +22,13 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.mainContainer}>
-        <Header lightMode={lightMode} setLightMode={setLightMode}></Header>
-        <Hero lightMode={lightMode}></Hero>
-        <About lightMode={lightMode}></About>
-        <Pricing lightMode={lightMode}></Pricing>
-        <Contact lightMode={lightMode}></Contact>
+        <LayoutGroup>
+          <Header lightMode={lightMode} setLightMode={setLightMode}></Header>
+          <Hero lightMode={lightMode}></Hero>
+          <About lightMode={lightMode}></About>
+          <Pricing lightMode={lightMode}></Pricing>
+          <Contact lightMode={lightMode}></Contact>
+        </LayoutGroup>
       </main>
     </>
   );

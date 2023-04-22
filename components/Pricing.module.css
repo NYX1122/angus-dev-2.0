@@ -103,7 +103,6 @@
 .detailsOuterContainer {
   background-color: black;
   padding: 20px;
-  width: 370px;
 }
 
 .detailsOuterContainer.light {
@@ -125,4 +124,57 @@
 
 .detailsInnerContainer.light {
   background-color: white;
+}
+
+@media (min-width: 750px) {
+  .container {
+    gap: 60px;
+  }
+
+  .prefaceContainer {
+    gap: 100px;
+  }
+
+  .priceContainer h2 {
+    font-size: 60px;
+  }
+
+  .subscriptionContainer {
+    gap: 50px;
+  }
+
+  .subscriptionContainer h1 {
+    font-size: 50px;
+  }
+
+  .prefaceParagraphContainer {
+    width: 550px;
+  }
+
+  .prefaceParagraphGraphicContainer {
+    height: 400px;
+    width: 608px;
+    top: -30px;
+  }
+
+  .prefaceParagraphContainer p {
+    font-size: 39px;
+  }
+
+  .detailsOuterContainer {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .detailsInnerContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    column-gap: 8px;
+  }
+
+  .gridItem {
+    align-self: start;
+  }
 }

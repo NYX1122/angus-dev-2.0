@@ -126,3 +126,50 @@
 .bulletsContainer.light p {
   background-color: white;
 }
+
+@media (min-width: 750px) {
+  .bulletsContainer p {
+    font-size: 21px;
+  }
+
+  .customWebDesign {
+    height: calc(20px*2);
+    width: 100%;
+  }
+
+  .professionalCoding {
+    height: 68px;
+    width: 100%;
+  }
+
+  .webHosting {
+    height: 70px;
+    width: 100%;
+  }
+
+  .siteMaintenance {
+    height: 60px;
+    width: 100%;
+  }
+
+  .unlimitedChanges {
+    height: 35px;
+    width: 100%;
+  }
+
+  .seoStrategies {
+    height: 35px;
+    width: 100%;
+    right: 11px;
+  }
+
+  .ecommerceStores {
+    height: 80px;
+    width: 100%;
+  }
+
+  .websiteAnalytics {
+    height: 90px;
+    width: 100%;
+  }
+}

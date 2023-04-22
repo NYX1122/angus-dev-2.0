@@ -243,108 +243,108 @@ export default function Pricing({ lightMode }) {
     },
   ];
   return (
-    <>
-      <div
-        className={
-          lightMode
-            ? `${styles['container']} ${styles['light']}`
-            : styles.container
-        }
-        id='Pricing'
-      >
-        <div className={styles.prefaceContainer}>
-          <div className={styles.sectionTitleContainer}>
-            <SectionTitle
-              content='Pricing'
-              lightMode={lightMode}
-            ></SectionTitle>
-          </div>
-          <div
-            className={
-              lightMode
-                ? `${styles['subscriptionContainer']} ${styles['light']}`
-                : styles.subscriptionContainer
-            }
-          >
-            <div
-              className={
-                lightMode
-                  ? `${styles['priceContainer']} ${styles['light']}`
-                  : styles.priceContainer
-              }
-            >
-              <Image
-                src={
-                  lightMode ? priceContainerGraphicLight : priceContainerGraphic
-                }
-                alt='Shiny background placed behind the price.'
-                fill={true}
-              ></Image>
-              <h2>$200 Per Month</h2>
-            </div>
-            <h1>It's that easy.</h1>
-            <div
-              className={
-                lightMode
-                  ? `${styles['prefaceParagraphContainer']} ${styles['light']}`
-                  : styles.prefaceParagraphContainer
-              }
-            >
-              <div className={styles.prefaceParagraphGraphicContainer}>
-                <Image
-                  src={
-                    lightMode
-                      ? paragraphContainerGraphicLight
-                      : paragraphContainerGraphic
-                  }
-                  alt='Shiny background behind paragraph explaining subscription tier.'
-                  fill={true}
-                ></Image>
-              </div>
-              <p>
-                This is our only subscription tier, and it includes everything
-                that a website needs to be competitive. See below for all
-                included services.
-              </p>
-            </div>
-          </div>
+    <div
+      className={
+        lightMode
+          ? `${styles['container']} ${styles['light']}`
+          : styles.container
+      }
+      id='Pricing'
+    >
+      <div className={styles.prefaceContainer}>
+        <div className={styles.sectionTitleContainer}>
+          <SectionTitle content='Pricing' lightMode={lightMode}></SectionTitle>
         </div>
         <div
           className={
             lightMode
-              ? `${styles['detailsOuterContainer']} ${styles['light']}`
-              : styles.detailsOuterContainer
+              ? `${styles['subscriptionContainer']} ${styles['light']}`
+              : styles.subscriptionContainer
           }
         >
-          <LayoutGroup>
-            <motion.div
-              className={
-                lightMode
-                  ? `${styles['detailsInnerContainer']} ${styles['light']}`
-                  : styles.detailsInnerContainer
+          <div
+            className={
+              lightMode
+                ? `${styles['priceContainer']} ${styles['light']}`
+                : styles.priceContainer
+            }
+          >
+            <Image
+              src={
+                lightMode ? priceContainerGraphicLight : priceContainerGraphic
               }
-              style={{ borderRadius: '40px' }}
-              layout
-            >
-              <LayoutGroup>
-                {detailsContentArray.map((item) => (
-                  <motion.div layout='preserve-aspect' key={item.id}>
-                    <PriceItem
-                      lightMode={lightMode}
-                      id={item.id}
-                      graphicAlt={item.graphicAlt}
-                      graphic={item.graphic}
-                      graphicLight={item.graphicLight}
-                      title={item.title}
-                      bulletPoints={item.bulletPoints}
-                    ></PriceItem>
-                  </motion.div>
-                ))}
-              </LayoutGroup>
-            </motion.div>
-          </LayoutGroup>
+              alt='Shiny background placed behind the price.'
+              fill={true}
+            ></Image>
+            <h2>$200 Per Month</h2>
+          </div>
+          <h1>It's that easy.</h1>
+          <div
+            className={
+              lightMode
+                ? `${styles['prefaceParagraphContainer']} ${styles['light']}`
+                : styles.prefaceParagraphContainer
+            }
+          >
+            <div className={styles.prefaceParagraphGraphicContainer}>
+              <Image
+                src={
+                  lightMode
+                    ? paragraphContainerGraphicLight
+                    : paragraphContainerGraphic
+                }
+                alt='Shiny background behind paragraph explaining subscription tier.'
+                fill={true}
+              ></Image>
+            </div>
+            <p>
+              This is our only subscription tier, and it includes everything
+              that a website needs to be competitive. See below for all included
+              services.
+            </p>
+          </div>
         </div>
       </div>
-    </>
+      <motion.div
+        className={
+          lightMode
+            ? `${styles['detailsOuterContainer']} ${styles['light']}`
+            : styles.detailsOuterContainer
+        }
+        layout
+      >
+        <LayoutGroup>
+          <motion.div
+            className={
+              lightMode
+                ? `${styles['detailsInnerContainer']} ${styles['light']}`
+                : styles.detailsInnerContainer
+            }
+            style={{ borderRadius: '40px' }}
+            layout
+          >
+            <LayoutGroup>
+              {detailsContentArray.map((item) => (
+                <motion.div
+                  layout='preserve-aspect'
+                  key={item.id}
+                  className={styles.gridItem}
+                >
+                  <PriceItem
+                    lightMode={lightMode}
+                    id={item.id}
+                    graphicAlt={item.graphicAlt}
+                    graphic={item.graphic}
+                    graphicLight={item.graphicLight}
+                    title={item.title}
+                    bulletPoints={item.bulletPoints}
+                  ></PriceItem>
+                </motion.div>
+              ))}
+            </LayoutGroup>
+          </motion.div>
+        </LayoutGroup>
+      </motion.div>
+    </div>
   );
 }
