@@ -102,11 +102,15 @@
 .bulletsContainer {
   padding: 13px;
 
+
+
   display: flex;
   flex-direction: column;
   gap: 8px;
   background-color: black;
   border-radius: 35px 35px 20px 20px;
+
+  width: 299px;
 }
 
 .bulletsContainer.light {

@@ -102,7 +102,7 @@
 
 .detailsOuterContainer {
   background-color: black;
-  padding: 20px;
+  padding: 30px calc((100vw - 335px)/2);
 }
 
 .detailsOuterContainer.light {
