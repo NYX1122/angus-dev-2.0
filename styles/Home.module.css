@@ -2,6 +2,9 @@
   padding-top: 37px;
 }
 
+.mainContainer.light {
+  background-color: white;
+}
 
 @media (prefers-reduced-motion) {
 }

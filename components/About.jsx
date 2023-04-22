@@ -117,8 +117,20 @@ export default function About({ lightMode }) {
         </div>
       </div>
       {/* wow, wish I didn't need this outer outer container LOL */}
-      <div className={styles.outerOuterItemsContainer}>
-        <div className={styles.innerOuterItemsContainer}>
+      <div
+        className={
+          lightMode
+            ? `${styles['outerOuterItemsContainer']} ${styles['light']}`
+            : styles.outerOuterItemsContainer
+        }
+      >
+        <div
+          className={
+            lightMode
+              ? `${styles['innerOuterItemsContainer']} ${styles['light']}`
+              : styles.innerOuterItemsContainer
+          }
+        >
           <div
             className={
               lightMode

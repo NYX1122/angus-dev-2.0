@@ -143,7 +143,9 @@
 }
 
 .formItemFieldContainer.light {
-  outline-color: #1EFFBC;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 0 2px #1EFFBC;
+  box-shadow: 0 0 0 2px #1EFFBC;
   color: black;
 }
 
@@ -180,6 +182,7 @@
 @media (min-width: 750px) {
   .outerContainer {
     margin: 60px;
+    border-radius: 30px;
     padding: 60px;
     gap: 80px;
   }

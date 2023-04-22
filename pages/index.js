@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { motion, LayoutGroup } from 'framer-motion';
+import { LayoutGroup } from 'framer-motion';
 
 import Head from 'next/head';
 import Header from '../components/header';
@@ -21,13 +21,20 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={styles.mainContainer}>
+      <main
+        className={
+          lightMode
+            ? `${styles['mainContainer']} ${styles['light']}`
+            : styles.mainContainer
+        }
+      >
         <LayoutGroup>
           <Header lightMode={lightMode} setLightMode={setLightMode}></Header>
           <Hero lightMode={lightMode}></Hero>
           <About lightMode={lightMode}></About>
           <Pricing lightMode={lightMode}></Pricing>
           <Contact lightMode={lightMode}></Contact>
+          <br></br>
         </LayoutGroup>
       </main>
     </>
