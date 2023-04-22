@@ -83,7 +83,7 @@ export default function About({ lightMode }) {
     },
   ];
   return (
-    <>
+    <div className={styles.outerContainer}>
       <div
         className={
           lightMode
@@ -116,50 +116,58 @@ export default function About({ lightMode }) {
           </p>
         </div>
       </div>
-      <div
-        className={
-          lightMode
-            ? `${styles['outerItemsContainer']} ${styles['light']}`
-            : styles.outerItemsContainer
-        }
-      >
-        <AboutTitle content='What We Do' lightMode={lightMode}></AboutTitle>
-        <div className={styles.itemsContainer}>
-          {aboutItemArrayOne.map((item) => (
-            <AboutItem
-              key={item.id}
-              image={item.image}
-              imageLight={item.imageLight}
-              imageAlt={item.imageAlt}
-              title={item.title}
-              content={item.content}
+      {/* wow, wish I didn't need this outer outer container LOL */}
+      <div className={styles.outerOuterItemsContainer}>
+        <div className={styles.innerOuterItemsContainer}>
+          <div
+            className={
+              lightMode
+                ? `${styles['outerItemsContainer']} ${styles['light']}`
+                : styles.outerItemsContainer
+            }
+          >
+            <AboutTitle content='What We Do' lightMode={lightMode}></AboutTitle>
+            <div className={styles.itemsContainer}>
+              {aboutItemArrayOne.map((item) => (
+                <AboutItem
+                  key={item.id}
+                  image={item.image}
+                  imageLight={item.imageLight}
+                  imageAlt={item.imageAlt}
+                  title={item.title}
+                  content={item.content}
+                  lightMode={lightMode}
+                ></AboutItem>
+              ))}
+            </div>
+          </div>
+          <div
+            className={
+              lightMode
+                ? `${styles['outerItemsContainer']} ${styles['light']}`
+                : styles.outerItemsContainer
+            }
+          >
+            <AboutTitle
+              content='What We Offer'
               lightMode={lightMode}
-            ></AboutItem>
-          ))}
+            ></AboutTitle>
+            <div className={styles.itemsContainer}>
+              {aboutItemArrayTwo.map((item) => (
+                <AboutItem
+                  key={item.id}
+                  image={item.image}
+                  imageLight={item.imageLight}
+                  imageAlt={item.imageAlt}
+                  title={item.title}
+                  content={item.content}
+                  lightMode={lightMode}
+                ></AboutItem>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-      <div
-        className={
-          lightMode
-            ? `${styles['outerItemsContainer']} ${styles['light']}`
-            : styles.outerItemsContainer
-        }
-      >
-        <AboutTitle content='What We Offer' lightMode={lightMode}></AboutTitle>
-        <div className={styles.itemsContainer}>
-          {aboutItemArrayTwo.map((item) => (
-            <AboutItem
-              key={item.id}
-              image={item.image}
-              imageLight={item.imageLight}
-              imageAlt={item.imageAlt}
-              title={item.title}
-              content={item.content}
-              lightMode={lightMode}
-            ></AboutItem>
-          ))}
-        </div>
-      </div>
-    </>
+    </div>
   );
 }

@@ -21,3 +21,15 @@
 .container.light h1 {
   color: white;
 }
+
+@media (min-width: 750px) {
+  .container {
+    border-width: 5px;
+    outline-width: 6px;
+    padding: 2px 7px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+}

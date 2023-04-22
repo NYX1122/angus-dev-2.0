@@ -1,3 +1,6 @@
+.outerContainer br {
+  height: 0px;
+}
 .prefaceContainer {
   background-color: black;
 
@@ -71,7 +74,7 @@
 @media (min-width: 750px) {
   .prefaceContainer {
     border-radius: 30px;
-    padding: 50px;
+    padding: 60px;
     margin: 60px;
     gap: 60px;
   }
@@ -89,5 +92,28 @@
     font-size: 24px;
     border-width: 6px;
     padding: 10px;
+  }
+
+  .outerOuterItemsContainer {
+    padding: 60px;
+    background-color: black;
+  }
+
+  .innerOuterItemsContainer {
+    padding: 50px;
+    border-radius: 30px;
+    background-color:#1EFFBC;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .outerItemsContainer {
+    padding: 0px;
+    gap: 50px;
+  }
+
+  .itemsContainer {
+    gap: 40px;
   }
 }
