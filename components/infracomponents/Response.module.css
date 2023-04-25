@@ -121,3 +121,18 @@
     border-width: 4px;
   }
 }
+
+@media (min-width: 1250px) {
+  .container {
+    width: 450px;
+    left: calc(50dvw - 225px);
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .container button {
+    font-size: 25px;
+  }
+}
