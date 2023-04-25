@@ -122,3 +122,70 @@
     gap: 40px;
   }
 }
+
+@media (min-width: 1250px) {
+  .prefaceContainer {
+    margin: 50px 150px;
+  }
+
+  .developerGraphic {
+    width: 300px;
+    height: 300px;
+  }
+
+  .developerGraphicContainer {
+    height: 315px;
+    width: 315px;
+    border: 4px solid #1EFFBC;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .descriptionContainer {
+    border-width: 4px;
+  }
+
+  .descriptionContainer p {
+    font-size: 22px;
+    padding: 5px;
+    border-width: 4px;
+  }
+
+  .outerOuterItemsContainer {
+    padding: 70px;
+  }
+
+  .innerOuterItemsContainer {
+    gap: 40px;
+    padding: 50px;
+  }
+
+  .outerItemsContainer {
+    gap: 25px;
+  }
+
+  .itemsContainer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .normalGridItemOne {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .normalGridItemTwo {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  
+  .bigGridItem {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}

@@ -102,8 +102,6 @@
 .bulletsContainer {
   padding: 13px;
 
-
-
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -175,5 +173,11 @@
   .websiteAnalytics {
     height: 90px;
     width: 100%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .bulletsContainer {
+    width: 360px;
   }
 }

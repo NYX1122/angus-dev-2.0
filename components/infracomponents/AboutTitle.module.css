@@ -33,3 +33,14 @@
     font-size: 40px;
   }
 }
+
+@media (min-width: 1250px) {
+  .container {
+    border-width: 3px;
+    outline-width: 4px;
+  }
+
+  .container h1 {
+    font-size: 35px;
+  }
+}

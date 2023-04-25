@@ -93,11 +93,13 @@ export default function About({ lightMode }) {
         id='About'
       >
         <SectionTitle content='About Us' lightMode={lightMode}></SectionTitle>
-        <Image
-          src={lightMode ? developerGraphicLight : developerGraphic}
-          alt='Graphic depicting a web developer'
-          className={styles.developerGraphic}
-        ></Image>
+        <div className={styles.developerGraphicContainer}>
+          <Image
+            src={lightMode ? developerGraphicLight : developerGraphic}
+            alt='Graphic depicting a web developer'
+            className={styles.developerGraphic}
+          ></Image>
+        </div>
         <div
           className={
             lightMode
@@ -141,15 +143,25 @@ export default function About({ lightMode }) {
             <AboutTitle content='What We Do' lightMode={lightMode}></AboutTitle>
             <div className={styles.itemsContainer}>
               {aboutItemArrayOne.map((item) => (
-                <AboutItem
+                <div
                   key={item.id}
-                  image={item.image}
-                  imageLight={item.imageLight}
-                  imageAlt={item.imageAlt}
-                  title={item.title}
-                  content={item.content}
-                  lightMode={lightMode}
-                ></AboutItem>
+                  className={
+                    item.id === 'seoGraphic'
+                      ? styles.bigGridItem
+                      : item.id === 'designGraphic'
+                      ? styles.normalGridItemOne
+                      : styles.normalGridItemTwo
+                  }
+                >
+                  <AboutItem
+                    image={item.image}
+                    imageLight={item.imageLight}
+                    imageAlt={item.imageAlt}
+                    title={item.title}
+                    content={item.content}
+                    lightMode={lightMode}
+                  ></AboutItem>
+                </div>
               ))}
             </div>
           </div>
@@ -166,15 +178,26 @@ export default function About({ lightMode }) {
             ></AboutTitle>
             <div className={styles.itemsContainer}>
               {aboutItemArrayTwo.map((item) => (
-                <AboutItem
+                <div
                   key={item.id}
-                  image={item.image}
-                  imageLight={item.imageLight}
-                  imageAlt={item.imageAlt}
-                  title={item.title}
-                  content={item.content}
-                  lightMode={lightMode}
-                ></AboutItem>
+                  className={
+                    item.id === 'moneyGraphic'
+                      ? styles.bigGridItem
+                      : item.id === 'performanceGraphic'
+                      ? styles.normalGridItemOne
+                      : styles.normalGridItemTwo
+                  }
+                >
+                  <AboutItem
+                    key={item.id}
+                    image={item.image}
+                    imageLight={item.imageLight}
+                    imageAlt={item.imageAlt}
+                    title={item.title}
+                    content={item.content}
+                    lightMode={lightMode}
+                  ></AboutItem>
+                </div>
               ))}
             </div>
           </div>

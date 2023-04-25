@@ -92,3 +92,31 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1250px) {
+  .container {
+    padding: 20px 0 0 0;
+    gap: 15px;
+  }
+
+  .imgContainer {
+    width: 400px;
+    height: 200px;
+  }
+
+  .descriptionContainer {
+    border-width: 5px 0 0 0;
+  }
+
+  .contentContainer {
+    padding: 5px;
+  }
+
+  .titleContainer h1 {
+    font-size: 20px;
+  }
+
+  .contentContainer p {
+    font-size: 17px;
+  }
+}

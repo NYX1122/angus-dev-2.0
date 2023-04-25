@@ -18,7 +18,7 @@
 .overlay {
   /* sizing */
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   
   /* position */
   position: fixed;
@@ -306,5 +306,62 @@
   .toggleCircle {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .overlay {
+    top: 51px;
+  }
+
+  .container {
+    height: calc(100dvh - 51px);
+    top: 51px;
+  }
+
+  .menuLogo {
+    height: 150px;
+    width: 150px;
+    padding: 0px;
+    padding-left: 10px;
+  }
+
+  .linksContainer a {
+    font-size: 35px;
+    border-bottom-width: 6px;
+  }
+
+  .lightToggleOuterContainer {
+    gap: 5px;
+  }
+
+  .lightToggleOuterContainer h3 {
+    font-size: 20px;
+  }
+
+  .lightToggleInnerContainer {
+    width: 45px;
+    height: 20px;
+  }
+
+  .toggleBar {
+    width: 45px;
+    height: 20px;
+  }
+
+  .toggleCircleOuterContainer {
+    bottom: 25px;
+    width: 45px;
+    height: 20px;
+  }
+
+  .toggleCircleInnerContainer {
+    width: 20px;
+    height: 20px;
+  }
+
+  .toggleCircle {
+    width: 20px;
+    height: 20px;
   }
 }

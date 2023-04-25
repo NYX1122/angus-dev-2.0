@@ -108,3 +108,18 @@
     height: 30px;
   }
 }
+
+@media (min-width: 1250px) {
+  .container {
+    padding: 5px 10px;
+  }
+
+  .companyName {
+    font-size: 30px;
+  }
+
+  .menuLogo {
+    width: 80px;
+    height: 25px;
+  }
+}

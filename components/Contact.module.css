@@ -213,3 +213,23 @@
     border-width: 4px;
   }
 }
+
+@media (min-width: 1250px) {
+  .outerContainer {
+    margin: 50px 150px 10px;
+    padding: 50px 150px;
+    gap: 50px;
+  }
+
+  .formItemOuterContainer label {
+    font-size: 25px;
+  }
+
+  .formItemFieldContainer {
+    font-size: 25px;
+  }
+
+  .formContainer button {
+    font-size: 25px;
+  }
+}

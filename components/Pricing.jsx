@@ -328,7 +328,24 @@ export default function Pricing({ lightMode }) {
                 <motion.div
                   layout='preserve-aspect'
                   key={item.id}
-                  className={styles.gridItem}
+                  className={
+                    item.id === 'customWebDesign'
+                      ? `${styles['gridItem']} ${styles['one']}`
+                      : item.id === 'professionalCoding'
+                      ? `${styles['gridItem']} ${styles['two']}`
+                      : item.id === 'webHosting'
+                      ? `${styles['gridItem']} ${styles['three']}`
+                      : item.id === 'siteMaintenance'
+                      ? `${styles['gridItem']} ${styles['four']}`
+                      : item.id === 'unlimitedChanges'
+                      ? `${styles['gridItem']} ${styles['five']}`
+                      : item.id === 'seoStrategies'
+                      ? `${styles['gridItem']} ${styles['six']}`
+                      : item.id === 'ecommerceStores'
+                      ? `${styles['gridItem']} ${styles['seven']}`
+                      : item.id === 'websiteAnalytics' &&
+                        `${styles['gridItem']} ${styles['eight']}`
+                  }
                 >
                   <PriceItem
                     lightMode={lightMode}

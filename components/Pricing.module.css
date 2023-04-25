@@ -178,3 +178,84 @@
     align-self: start;
   }
 }
+
+@media (min-width: 1250px) {
+  .prefaceContainer {
+    gap: 80px;
+  }
+
+  .subscriptionContainer {
+    gap: 30px;
+  }
+
+  .priceContainer h2 {
+      font-size: 40px;
+    }
+
+  .subscriptionContainer h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+
+  .prefaceParagraphContainer {
+    width: 440px;
+  }
+
+  .prefaceParagraphGraphicContainer {
+    height: 340px;
+    width: 510px;
+    top: -40px;
+  }
+
+  .prefaceParagraphContainer p {
+    font-size: 30px;
+  }
+
+  .detailsOuterContainer {
+    padding: 60px;
+  }
+
+  .detailsInnerContainer {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .gridItem.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gridItem.two {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .gridItem.three {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+  .gridItem.four {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gridItem.five {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .gridItem.six {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+  .gridItem.seven {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .gridItem.eight {
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+}
