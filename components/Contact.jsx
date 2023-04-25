@@ -39,7 +39,7 @@ export default function Contact({ lightMode }) {
   const [responseEl, setResponseEl] = useState('');
 
   const validationRGEX = {
-    name: /^([a-zA-Z\S]{2,20})$/,
+    name: /^([a-z A-Z\d\S]{2,50})$/,
     phone: /^([0-9]{3})-([0-9]{3})-([0-9]{4})$/,
     email: /^([a-zA-Z0-9_\.-]+)@([\da-zA-Z\.-]+)\.([a-zA-Z\.]{2,6})$/,
     business: /^([a-z A-Z\d\S]{2,50})$/,
