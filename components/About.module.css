@@ -190,6 +190,20 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .prefaceContainer {
+    margin: 75px 350px;
+  }
+
+  .innerOuterItemsContainer {
+    gap: 100px;
+  }
+
+  .outerItemsContainer {
+    gap: 50px;
+  }
+}
+
 @media (min-width: 2000px) {
   .prefaceContainer {
     margin: 75px 700px;

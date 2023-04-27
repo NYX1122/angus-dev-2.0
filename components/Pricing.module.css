@@ -212,7 +212,7 @@
   }
 
   .detailsOuterContainer {
-    padding: 60px;
+    padding: 50px calc((100vw - 1143px)/2);
   }
 
   .detailsInnerContainer {
@@ -260,6 +260,12 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .detailsOuterContainer {
+    padding: 50px calc((100vw - 1143px)/2);
+  }
+}
+
 @media (min-width: 2000px) {
   .container {
     gap: 100px;
@@ -288,7 +294,7 @@
   }
 
   .detailsOuterContainer {
-    padding: 50px 600px 100px;
+    padding: 50px calc((100vw - 1330px)/2);
   }
 
   .detailsInnerContainer {
