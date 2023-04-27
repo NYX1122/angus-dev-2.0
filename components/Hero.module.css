@@ -163,3 +163,42 @@
     font-size: 50px;
   }
 }
+
+@media (min-width: 2000px) {
+  .topLeftCornerHero {
+    width: 400px;
+    height: 400px;
+  }
+
+  .topRightCornerHero {
+    width: 400px;
+    height: 400px;
+  }
+
+  .bottomLeftCornerHero {
+    width: 400px;
+    height: 400px;
+  }
+
+  .bottomRightCornerHero {
+    width: 400px;
+    height: 400px;
+  }
+
+  .logo {
+    width: 375px;
+    height: 400px;
+  }
+
+  .sloganContainer {
+    gap: 20px;
+  }
+
+  .lineContainer h2 {
+    font-size: 55px;
+  }
+
+  .lineContainer h3 {
+    font-size: 55px;
+  }
+}

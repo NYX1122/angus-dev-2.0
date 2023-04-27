@@ -190,7 +190,7 @@
 
   .priceContainer h2 {
       font-size: 40px;
-    }
+  }
 
   .subscriptionContainer h1 {
     font-size: 40px;
@@ -257,5 +257,41 @@
   .gridItem.eight {
     grid-column-start: 4;
     grid-column-end: 6;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    gap: 100px;
+  }
+
+  .priceContainer h2 {
+    font-size: 55px;
+  }
+
+  .prefaceParagraphContainer p {
+    font-size: 45px;
+  }
+
+  .subscriptionContainer h1 {
+    font-size: 45px;
+  }
+
+  .prefaceParagraphContainer {
+    width: 650px;
+  }
+
+  .prefaceParagraphGraphicContainer {
+    height: 475px;
+    width: 700px;
+    top: -40px;
+  }
+
+  .detailsOuterContainer {
+    padding: 50px 600px 100px;
+  }
+
+  .detailsInnerContainer {
+    row-gap: 16px;
   }
 }

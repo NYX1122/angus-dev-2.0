@@ -11,42 +11,46 @@ export default function AboutItem({
   lightMode,
 }) {
   return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.imgContainer}>
-          <Image
-            src={lightMode ? imageLight : image}
-            alt={imageAlt}
-            fill={true}
-          ></Image>
+    <div
+      className={
+        lightMode
+          ? `${styles['container']} ${styles['light']}`
+          : styles.container
+      }
+    >
+      <div className={styles.imgContainer}>
+        <Image
+          src={lightMode ? imageLight : image}
+          alt={imageAlt}
+          fill={true}
+        ></Image>
+      </div>
+      <div
+        className={
+          lightMode
+            ? `${styles['descriptionContainer']} ${styles['light']}`
+            : styles.descriptionContainer
+        }
+      >
+        <div
+          className={
+            lightMode
+              ? `${styles['titleContainer']} ${styles['light']}`
+              : styles.titleContainer
+          }
+        >
+          <h1>{title}</h1>
         </div>
         <div
           className={
             lightMode
-              ? `${styles['descriptionContainer']} ${styles['light']}`
-              : styles.descriptionContainer
+              ? `${styles['contentContainer']} ${styles['light']}`
+              : styles.contentContainer
           }
         >
-          <div
-            className={
-              lightMode
-                ? `${styles['titleContainer']} ${styles['light']}`
-                : styles.titleContainer
-            }
-          >
-            <h1>{title}</h1>
-          </div>
-          <div
-            className={
-              lightMode
-                ? `${styles['contentContainer']} ${styles['light']}`
-                : styles.contentContainer
-            }
-          >
-            <p>{content}</p>
-          </div>
+          <p>{content}</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

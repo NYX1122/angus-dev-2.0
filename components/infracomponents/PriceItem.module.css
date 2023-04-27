@@ -181,3 +181,9 @@
     width: 360px;
   }
 }
+
+@media (min-width: 2000px) {
+  .bulletsContainer {
+    width: 420px;
+  }
+}

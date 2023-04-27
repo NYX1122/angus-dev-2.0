@@ -44,3 +44,14 @@
     font-size: 35px;
   }
 }
+
+@media (min-width: 2000px) {
+  .container {
+    border-width: 5px;
+    outline-width: 6px;
+  }
+
+  .container h1 {
+    font-size: 45px;
+  }
+}

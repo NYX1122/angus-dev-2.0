@@ -233,3 +233,23 @@
     font-size: 25px;
   }
 }
+
+@media (min-width: 2000px) {
+  .outerContainer {
+    margin: 50px 800px 10px;
+    padding: 50px;
+    gap: 50px;
+  }
+
+  .formItemOuterContainer label {
+    font-size: 30px;
+  }
+
+  .formItemFieldContainer {
+    font-size: 30px;
+  }
+
+  .formContainer button {
+    font-size: 30px;
+  }
+}

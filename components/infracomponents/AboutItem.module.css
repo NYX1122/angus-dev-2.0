@@ -70,6 +70,10 @@
     gap: 40px;
   }
 
+  .container.light {
+    border-color: #5C6F68;
+  }
+
   .imgContainer {
     width: 100%;
     height: 250px;
@@ -109,7 +113,7 @@
   }
 
   .contentContainer {
-    padding: 5px;
+    padding: 8px;
   }
 
   .titleContainer h1 {
@@ -118,5 +122,28 @@
 
   .contentContainer p {
     font-size: 17px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    gap: 25px;
+  }
+
+  .imgContainer {
+    width: 500px;
+    height: 300px;
+  }
+
+  .titleContainer h1 {
+    font-size: 30px;
+  }
+
+  .contentContainer p {
+    font-size: 20px;
+  }
+
+  .contentContainer {
+    padding: 5px;
   }
 }

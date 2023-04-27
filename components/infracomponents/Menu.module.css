@@ -365,3 +365,50 @@
     height: 20px;
   }
 }
+
+@media (min-width: 2000px) {
+  .menuLogo {
+    height: 195px;
+    width: 195px;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .linksContainer a {
+    font-size: 40px;
+  }
+
+  .lightToggleOuterContainer {
+    gap: 7px;
+  }
+
+  .lightToggleOuterContainer h3 {
+    font-size: 25px;
+  }
+
+  .lightToggleInnerContainer {
+    width: 50px;
+    height: 25px;
+  }
+
+  .toggleBar {
+    width: 50px;
+    height: 25px;
+  }
+
+  .toggleCircleOuterContainer {
+    bottom: 30px;
+    width: 50px;
+    height: 25px;
+  }
+
+  .toggleCircleInnerContainer {
+    width: 25px;
+    height: 25px;
+  }
+
+  .toggleCircle {
+    width: 25px;
+    height: 25px;
+  }
+}

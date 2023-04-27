@@ -189,3 +189,31 @@
     grid-column-end: 4;
   }
 }
+
+@media (min-width: 2000px) {
+  .prefaceContainer {
+    margin: 75px 700px;
+  }
+
+  .developerGraphic {
+    width: 400px;
+    height: 400px;
+  }
+
+  .developerGraphicContainer {
+    height: 419px;
+    width: 419px;
+    border: 5px solid #1EFFBC;
+  }
+
+  .descriptionContainer p {
+    font-size: 25px;
+  }
+  .outerOuterItemsContainer {
+    padding: 75px 550px;
+  }
+
+  .outerItemsContainer {
+    gap: 80px;
+  }
+}

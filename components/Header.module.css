@@ -123,3 +123,9 @@
     height: 25px;
   }
 }
+
+@media (min-width: 2000px) {
+  .container {
+    padding: 5px 15px;
+  }
+}

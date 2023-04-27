@@ -136,3 +136,18 @@
     font-size: 25px;
   }
 }
+
+@media (min-width: 2000px) {
+  .container {
+    width: 500px;
+    left: calc(50dvw - 250px);
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container button {
+    font-size: 30px;
+  }
+}
