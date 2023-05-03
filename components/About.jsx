@@ -6,21 +6,21 @@ import Image from 'next/image';
 
 import styles from './About.module.css';
 
-import developerGraphic from '../public/developerGraphic.svg';
-import developerGraphicLight from '../public/developerGraphicLight.svg';
+import developerGraphic from '../public/developerGraphic.svg?url';
+import developerGraphicLight from '../public/developerGraphicLight.svg?url';
 
-import designGraphic from '../public/designGraphic.svg';
-import designGraphicLight from '../public/designGraphicLight.svg';
-import deviceGraphic from '../public/deviceGraphic.svg';
-import deviceGraphicLight from '../public/deviceGraphicLight.svg';
-import seoGraphic from '../public/seoGraphic.svg';
-import seoGraphicLight from '../public/seoGraphicLight.svg';
-import performanceGraphic from '../public/performanceGraphic.svg';
-import performanceGraphicLight from '../public/performanceGraphicLight.svg';
-import changeGraphic from '../public/changeGraphic.svg';
-import changeGraphicLight from '../public/changeGraphicLight.svg';
-import moneyGraphic from '../public/moneyGraphic.svg';
-import moneyGraphicLight from '../public/moneyGraphicLight.svg';
+import designGraphic from '../public/designGraphic.svg?url';
+import designGraphicLight from '../public/designGraphicLight.svg?url';
+import deviceGraphic from '../public/deviceGraphic.svg?url';
+import deviceGraphicLight from '../public/deviceGraphicLight.svg?url';
+import seoGraphic from '../public/seoGraphic.svg?url';
+import seoGraphicLight from '../public/seoGraphicLight.svg?url';
+import performanceGraphic from '../public/performanceGraphic.svg?url';
+import performanceGraphicLight from '../public/performanceGraphicLight.svg?url';
+import changeGraphic from '../public/changeGraphic.svg?url';
+import changeGraphicLight from '../public/changeGraphicLight.svg?url';
+import moneyGraphic from '../public/moneyGraphic.svg?url';
+import moneyGraphicLight from '../public/moneyGraphicLight.svg?url';
 
 export default function About({ lightMode }) {
   const aboutItemArrayOne = [

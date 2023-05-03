@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 import styles from './Header.module.css';
 
-import menuLines from '../public/menuLines.svg';
+import menuLines from '../public/menuLines.svg?url';
 
 export default function Header({ lightMode, setLightMode }) {
   const [isMenuOpen, setMenuOpen] = useState(false);

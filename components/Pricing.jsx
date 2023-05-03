@@ -7,35 +7,35 @@ import Image from 'next/image';
 
 import styles from './Pricing.module.css';
 
-import priceContainerGraphic from '../public/priceContainerGraphic.svg';
+import PriceContainerGraphic from './SVG/priceContainerGraphic.svg';
 import priceContainerGraphicLight from '../public/priceContainerGraphicLight.svg';
 
-import paragraphContainerGraphic from '../public/paragraphContainerGraphic.svg';
-import paragraphContainerGraphicLight from '../public/paragraphContainerGraphicLight.svg';
+import paragraphContainerGraphic from '../public/paragraphContainerGraphic.svg?url';
+import paragraphContainerGraphicLight from '../public/paragraphContainerGraphicLight.svg?url';
 
-import detailCustomGraphic from '../public/detailCustomGraphic.svg';
-import detailCustomGraphicLight from '../public/detailCustomGraphicLight.svg';
+import detailCustomGraphic from '../public/detailCustomGraphic.svg?url';
+import detailCustomGraphicLight from '../public/detailCustomGraphicLight.svg?url';
 
-import detailProfessionalGraphic from '../public/detailProfessionalGraphic.svg';
-import detailProfessionalGraphicLight from '../public/detailProfessionalGraphicLight.svg';
+import detailProfessionalGraphic from '../public/detailProfessionalGraphic.svg?url';
+import detailProfessionalGraphicLight from '../public/detailProfessionalGraphicLight.svg?url';
 
-import detailHostingGraphic from '../public/detailHostingGraphic.svg';
-import detailHostingGraphicLight from '../public/detailHostingGraphicLight.svg';
+import detailHostingGraphic from '../public/detailHostingGraphic.svg?url';
+import detailHostingGraphicLight from '../public/detailHostingGraphicLight.svg?url';
 
-import detailMaintenanceGraphic from '../public/detailMaintenanceGraphic.svg';
-import detailMaintenanceGraphicLight from '../public/detailMaintenanceGraphicLight.svg';
+import detailMaintenanceGraphic from '../public/detailMaintenanceGraphic.svg?url';
+import detailMaintenanceGraphicLight from '../public/detailMaintenanceGraphicLight.svg?url';
 
-import detailChangesGraphic from '../public/detailChangesGraphic.svg';
-import detailChangesGraphicLight from '../public/detailChangesGraphicLight.svg';
+import detailChangesGraphic from '../public/detailChangesGraphic.svg?url';
+import detailChangesGraphicLight from '../public/detailChangesGraphicLight.svg?url';
 
-import detailStrategiesGraphic from '../public/detailStrategiesGraphic.svg';
-import detailStrategiesGraphicLight from '../public/detailStrategiesGraphicLight.svg';
+import detailStrategiesGraphic from '../public/detailStrategiesGraphic.svg?url';
+import detailStrategiesGraphicLight from '../public/detailStrategiesGraphicLight.svg?url';
 
-import detailEcommerceGraphic from '../public/detailEcommerceGraphic.svg';
-import detailEcommerceGraphicLight from '../public/detailEcommerceGraphicLight.svg';
+import detailEcommerceGraphic from '../public/detailEcommerceGraphic.svg?url';
+import detailEcommerceGraphicLight from '../public/detailEcommerceGraphicLight.svg?url';
 
-import detailAnalyticsGraphic from '../public/detailAnalyticsGraphic.svg';
-import detailAnalyticsGraphicLight from '../public/detailAnalyticsGraphicLight.svg';
+import detailAnalyticsGraphic from '../public/detailAnalyticsGraphic.svg?url';
+import detailAnalyticsGraphicLight from '../public/detailAnalyticsGraphicLight.svg?url';
 
 export default function Pricing({ lightMode }) {
   const detailsContentArray = [
@@ -269,13 +269,7 @@ export default function Pricing({ lightMode }) {
                 : styles.priceContainer
             }
           >
-            <Image
-              src={
-                lightMode ? priceContainerGraphicLight : priceContainerGraphic
-              }
-              alt='Shiny background placed behind the price.'
-              fill={true}
-            ></Image>
+            <PriceContainerGraphic></PriceContainerGraphic>
             <h2>$200 Per Month</h2>
           </div>
           <h1>It's that easy.</h1>

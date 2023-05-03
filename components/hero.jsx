@@ -2,16 +2,16 @@ import Image from 'next/image';
 
 import styles from './Hero.module.css';
 
-import topLeftCornerHero from '../public/topLeftCornerHero.svg';
-import topLeftCornerHeroLight from '../public/topLeftCornerHeroLight.svg';
-import topRightCornerHero from '../public/topRightCornerHero.svg';
-import topRightCornerHeroLight from '../public/topRightCornerHeroLight.svg';
-import bottomLeftCornerHero from '../public/bottomLeftCornerHero.svg';
-import bottomLeftCornerHeroLight from '../public/bottomLeftCornerHeroLight.svg';
-import bottomRightCornerHero from '../public/bottomRightCornerHero.svg';
-import bottomRightCornerHeroLight from '../public/bottomRightCornerHeroLight.svg';
-import logo from '../public/logo.svg';
-import logoLight from '../public/logoLight.svg';
+import topLeftCornerHero from '../public/topLeftCornerHero.svg?url';
+import topLeftCornerHeroLight from '../public/topLeftCornerHeroLight.svg?url';
+import topRightCornerHero from '../public/topRightCornerHero.svg?url';
+import topRightCornerHeroLight from '../public/topRightCornerHeroLight.svg?url';
+import bottomLeftCornerHero from '../public/bottomLeftCornerHero.svg?url';
+import bottomLeftCornerHeroLight from '../public/bottomLeftCornerHeroLight.svg?url';
+import bottomRightCornerHero from '../public/bottomRightCornerHero.svg?url';
+import bottomRightCornerHeroLight from '../public/bottomRightCornerHeroLight.svg?url';
+import logo from '../public/logo.svg?url';
+import logoLight from '../public/logoLight.svg?url';
 
 export default function Hero({ lightMode }) {
   const graphicDataArray = [

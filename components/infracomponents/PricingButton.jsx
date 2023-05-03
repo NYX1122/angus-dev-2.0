@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import styles from './PricingButton.module.css';
 
-import pricingDetailTitleBackground from '../../public/pricingDetailTitleBackground.svg';
-import pricingDetailTitleBackgroundLight from '../../public/pricingDetailTitleBackgroundLight.svg';
+import pricingDetailTitleBackground from '../../public/pricingDetailTitleBackground.svg?url';
+import pricingDetailTitleBackgroundLight from '../../public/pricingDetailTitleBackgroundLight.svg?url';
 
 export default function PricingButton({ content, lightMode }) {
   return (

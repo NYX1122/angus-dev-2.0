@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 import styles from './Menu.module.css';
 
-import menuLogo from '../../public/menuLogo.svg';
-import toggleCircle from '../../public/toggleCircle.svg';
-import toggleBar from '../../public/toggleBar.svg';
+import menuLogo from '../../public/menuLogo.svg?url';
+import toggleCircle from '../../public/toggleCircle.svg?url';
+import toggleBar from '../../public/toggleBar.svg?url';
 
 export default function Menu({
   isMenuOpen,
