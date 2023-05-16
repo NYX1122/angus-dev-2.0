@@ -53,8 +53,8 @@
 }
 
 .subscriptionContainer p {
+  width: 345px;
   font-size: 18px;
-  padding: 0px 15px;
   text-align: center;
 }
 
@@ -85,27 +85,6 @@
 }
 
 @media (min-width: 750px) {
-  .container {
-    gap: 60px;
-  }
-
-  .prefaceContainer {
-    gap: 100px;
-  }
-
-  .subscriptionContainer {
-    gap: 50px;
-  }
-
-  .subscriptionContainer h1 {
-    font-size: 50px;
-  }
-
-  .subscriptionContainer p {
-    padding: 20px;
-    font-size: 25px;
-  }
-
   .detailsOuterContainer {
     padding: 30px;
     width: 100%;
@@ -129,9 +108,17 @@
     gap: 30px;
   }
 
+  .subscriptionContainer h2 {
+    font-size: 35px;
+  }
+
   .subscriptionContainer h1 {
-    font-size: 40px;
-    padding-bottom: 15px;
+    font-size: 32px;
+  }
+
+  .subscriptionContainer p {
+    font-size: 23px;
+    width: 450px;
   }
 
   .detailsOuterContainer {
@@ -190,12 +177,17 @@
 }
 
 @media (min-width: 2000px) {
-  .container {
-    gap: 100px;
+  .subscriptionContainer h2 {
+    font-size: 40px;
   }
 
   .subscriptionContainer h1 {
-    font-size: 45px;
+    font-size: 37px;
+  }
+
+  .subscriptionContainer p {
+    font-size: 28px;
+    width: 550px;
   }
 
   .detailsOuterContainer {
