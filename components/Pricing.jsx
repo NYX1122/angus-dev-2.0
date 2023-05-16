@@ -3,15 +3,7 @@ import { motion, LayoutGroup } from 'framer-motion';
 import SectionTitle from './infracomponents/SectionTitle';
 import PriceItem from './infracomponents/PriceItem';
 
-import Image from 'next/image';
-
 import styles from './Pricing.module.css';
-
-import priceContainerGraphic from '../public/priceContainerGraphic.svg';
-import priceContainerGraphicLight from '../public/priceContainerGraphicLight.svg';
-
-import paragraphContainerGraphic from '../public/paragraphContainerGraphic.svg';
-import paragraphContainerGraphicLight from '../public/paragraphContainerGraphicLight.svg';
 
 import detailCustomGraphic from '../public/detailCustomGraphic.svg';
 import detailCustomGraphicLight from '../public/detailCustomGraphicLight.svg';
@@ -252,9 +244,7 @@ export default function Pricing({ lightMode }) {
       id='Pricing'
     >
       <div className={styles.prefaceContainer}>
-        <div className={styles.sectionTitleContainer}>
-          <SectionTitle content='Pricing' lightMode={lightMode}></SectionTitle>
-        </div>
+        <SectionTitle content='Pricing' lightMode={lightMode}></SectionTitle>
         <div
           className={
             lightMode
@@ -262,47 +252,13 @@ export default function Pricing({ lightMode }) {
               : styles.subscriptionContainer
           }
         >
-          <div
-            className={
-              lightMode
-                ? `${styles['priceContainer']} ${styles['light']}`
-                : styles.priceContainer
-            }
-          >
-            <Image
-              src={
-                lightMode ? priceContainerGraphicLight : priceContainerGraphic
-              }
-              alt='Shiny background placed behind the price.'
-              fill={true}
-            ></Image>
-            <h2>$200 Per Month</h2>
-          </div>
+          <h2>$200 Per Month</h2>
           <h1>It's that easy.</h1>
-          <div
-            className={
-              lightMode
-                ? `${styles['prefaceParagraphContainer']} ${styles['light']}`
-                : styles.prefaceParagraphContainer
-            }
-          >
-            <div className={styles.prefaceParagraphGraphicContainer}>
-              <Image
-                src={
-                  lightMode
-                    ? paragraphContainerGraphicLight
-                    : paragraphContainerGraphic
-                }
-                alt='Shiny background behind paragraph explaining subscription tier.'
-                fill={true}
-              ></Image>
-            </div>
-            <p>
-              This is our only subscription tier, and it includes everything
-              that a website needs to be competitive. See below for all included
-              services.
-            </p>
-          </div>
+          <p>
+            This is our only subscription tier, and it includes everything that
+            a website needs to be competitive. See below for all included
+            services.
+          </p>
         </div>
       </div>
       <motion.div
